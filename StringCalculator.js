@@ -2,7 +2,7 @@ var test = require('mocha').it,
   expect = require('chai').expect;
 
 test('fromEnglish: "zero" through "nine"', function(){
-  expect(fromEnglish).to.exist;
+  expect(fromEnglish).to.number;
   expect(fromEnglish("zero") === 0).to.equal(0);
   expect(fromEnglish("one") === 1).to.equal(1);
   expect(fromEnglish("two") === 2).to.equal(2);
@@ -66,16 +66,16 @@ function fromEnglish(word){
 
 test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus).to.exist;
-  expect(plus("zero" + "zero")).to.equal(0);
-  expect(plus("zero" + "one")).to.equal(1); // change just one thing!
-  expect(plus("zero" + "two")).to.equal(2); // ha!
-  expect(plus("zero" + "three")).to.equal(3);
-  expect(plus("zero" + "four")).to.equal(4);
-  expect(plus("zero" + "five")).to.equal(5);
-  expect(plus("zero" + "six")).to.equal(6);
-  expect(plus("zero" + "seven")).to.equal(7); // change just one thing!
-  expect(plus("zero" + "eight")).to.equal(8);
-  expect(plus("zero" + "nine")).to.equal(9);
+  expect(plus("zero", "zero")).to.equal(0);
+  expect(plus("zero", "one")).to.equal(1); // change just one thing!
+  expect(plus("zero", "two")).to.equal(2); // ha!
+  expect(plus("zero", "three")).to.equal(3);
+  expect(plus("zero", "four")).to.equal(4);
+  expect(plus("zero", "five")).to.equal(5);
+  expect(plus("zero", "six")).to.equal(6);
+  expect(plus("zero", "seven")).to.equal(7); // change just one thing!
+  expect(plus("zero", "eight")).to.equal(8);
+  expect(plus("zero", "nine")).to.equal(9);
   // write more tests like those...
 }); // END test(plus)
 
@@ -85,6 +85,15 @@ test('plus: ("zero", "zero") through ("zero", "nine")', function(){
  * @return {Number} the value of `A` added to `B`
  */
 function plus(A, B){
+  if ("zero" + "zero") {
+    return 0;
+  };
+
+  if ("zero" + "one") {
+    return 1;
+  };
+
+
   // write those tests first, please...
 } // END plus
 
