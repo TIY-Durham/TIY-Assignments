@@ -112,3 +112,27 @@ Value representing numerical infinity.
 	
 `2 / 0` //
 `Infinity`
+
+##Others
+
+### Functions
+
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs. They are code that executes more code within the `{}`. 
+
+### `function` keyword
+
+The `function` keyword is used to _define_ a function with parentheses and curly braces:
+
+    // This is a Function Definition for `whatever`...
+    function whatever ( /* arguments go here */ ) {
+      // body of function goes here
+    }
+
+Once a function has been defined, it can be _invoked_ by 
+`whatever()`
+
+###typeof
+
+`typeof` is an operator followed by only one operand. It returns the type of the operand. 
+
+`typeof "Hello" // "string"`
