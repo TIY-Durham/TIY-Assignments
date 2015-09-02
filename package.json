@@ -1,0 +1,19 @@
+{
+  "name": "tiy-assignments",
+  "version": "0.0.0",
+  "description": "StringCalculator.js",
+  "main": "StringCalculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ricecoder/TIY-Assignments.git"
+  },
+  "author": "Lacey Rice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ricecoder/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/Ricecoder/TIY-Assignments#readme"
+}
