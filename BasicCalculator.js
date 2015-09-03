@@ -1,4 +1,4 @@
-/*function add(A, B){
+function add(A, B){
   return A + B;
 };
 
@@ -62,77 +62,75 @@ console.assert(add(5, 6) === 11);
 console.assert(add(5, 7) === 12);
 console.assert(add(5, 8) === 13);
 console.assert(add(5, 9) === 14);
-*/
+
 /**
  * @param {Number} A to add to B
  * @param {Number} B to add to A
  * @return {Number} sum of A and B
  */
 // END add
-/*function sub(A, B){
-  return B - A;
+function sub(A, B){
+  return A - B;
 };
 
-console.assert(sub(0, 1) === 1);
-console.assert(sub(0, 2) === 2);
-console.assert(sub(0, 3) === 3);
-console.assert(sub(0, 4) === 4);
-console.assert(sub(0, 5) === 5);
-console.assert(sub(0, 6) === 6);
-console.assert(sub(0, 7) === 7);
-console.assert(sub(0, 8) === 8);
-console.assert(sub(0, 9) === 9);
+console.assert(sub(0, 2) === -2);
+console.assert(sub(0, 3) === -3);
+console.assert(sub(0, 4) === -4);
+console.assert(sub(0, 5) === -5);
+console.assert(sub(0, 6) === -6);
+console.assert(sub(0, 7) === -7);
+console.assert(sub(0, 8) === -8);
+console.assert(sub(0, 9) === -9);
 
 console.assert(sub(1, 1) === 0);
-console.assert(sub(1, 2) === 1);
-console.assert(sub(1, 3) === 2);
-console.assert(sub(1, 4) === 3);
-console.assert(sub(1, 5) === 4);
-console.assert(sub(1, 6) === 5);
-console.assert(sub(1, 7) === 6);
-console.assert(sub(1, 8) === 7);
-console.assert(sub(1, 9) === 8);
+console.assert(sub(1, 2) === -1);
+console.assert(sub(1, 3) === -2);
+console.assert(sub(1, 4) === -3);
+console.assert(sub(1, 5) === -4);
+console.assert(sub(1, 6) === -5);
+console.assert(sub(1, 7) === -6);
+console.assert(sub(1, 8) === -7);
+console.assert(sub(1, 9) === -8);
 
-console.assert(sub(2, 1) === -1);
+console.assert(sub(2, 1) === 1);
 console.assert(sub(2, 2) === 0);
-console.assert(sub(2, 3) === 1);
-console.assert(sub(2, 4) === 2);
-console.assert(sub(2, 5) === 3);
-console.assert(sub(2, 6) === 4);
-console.assert(sub(2, 7) === 5);
-console.assert(sub(2, 8) === 6);
-console.assert(sub(2, 9) === 7);
+console.assert(sub(2, 3) === -1);
+console.assert(sub(2, 4) === -2);
+console.assert(sub(2, 5) === -3);
+console.assert(sub(2, 6) === -4);
+console.assert(sub(2, 7) === -5);
+console.assert(sub(2, 8) === -6);
+console.assert(sub(2, 9) === -7);
 
-console.assert(sub(3, 1) === -2);
-console.assert(sub(3, 2) === -1);
+console.assert(sub(3, 2) === 1);
 console.assert(sub(3, 3) === 0);
-console.assert(sub(3, 4) === 1);
-console.assert(sub(3, 5) === 2);
-console.assert(sub(3, 6) === 3);
-console.assert(sub(3, 7) === 4);
-console.assert(sub(3, 8) === 5);
-console.assert(sub(3, 9) === 6);
+console.assert(sub(3, 4) === -1);
+console.assert(sub(3, 5) === -2);
+console.assert(sub(3, 6) === -3);
+console.assert(sub(3, 7) === -4);
+console.assert(sub(3, 8) === -5);
+console.assert(sub(3, 9) === -6);
 
-console.assert(sub(4, 1) === -3);
-console.assert(sub(4, 2) === -2);
-console.assert(sub(4, 3) === -1);
+console.assert(sub(4, 1) === 3);
+console.assert(sub(4, 2) === 2);
+console.assert(sub(4, 3) === 1);
 console.assert(sub(4, 4) === 0);
-console.assert(sub(4, 5) === 1);
-console.assert(sub(4, 6) === 2);
-console.assert(sub(4, 7) === 3);
-console.assert(sub(4, 8) === 4);
-console.assert(sub(4, 9) === 5);
+console.assert(sub(4, 5) === -1);
+console.assert(sub(4, 6) === -2);
+console.assert(sub(4, 7) === -3);
+console.assert(sub(4, 8) === -4);
+console.assert(sub(4, 9) === -5);
 
-console.assert(sub(5, 1) === -4);
-console.assert(sub(5, 2) === -3);
-console.assert(sub(5, 3) === -2);
-console.assert(sub(5, 4) === -1);
+console.assert(sub(5, 1) === 4);
+console.assert(sub(5, 2) === 3);
+console.assert(sub(5, 3) === 2);
+console.assert(sub(5, 4) === 1);
 console.assert(sub(5, 5) === 0);
-console.assert(sub(5, 6) === 1);
-console.assert(sub(5, 7) === 2);
-console.assert(sub(5, 8) === 3);
-console.assert(sub(5, 9) === 4);
-*/
+console.assert(sub(5, 6) === -1);
+console.assert(sub(5, 7) === -2);
+console.assert(sub(5, 8) === -3);
+console.assert(sub(5, 9) === -4);
+
 /**
  * @param {Number} A to add to B
  * @param {Number} B to add to A
@@ -142,7 +140,7 @@ console.assert(sub(5, 9) === 4);
 
 
 
-/*function multiply(A, B){
+function multiply(A, B){
   return A * B;
 };
 
@@ -157,7 +155,7 @@ console.assert(multiply(0, 7) === 0);
 console.assert(multiply(0, 8) === 0);
 console.assert(multiply(0, 9) === 0);
 
-console.assert(multiply(1, 1) === 0);
+console.assert(multiply(1, 1) === 1);
 console.assert(multiply(1, 2) === 2);
 console.assert(multiply(1, 3) === 3);
 console.assert(multiply(1, 4) === 4);
@@ -206,7 +204,7 @@ console.assert(multiply(5, 6) === 30);
 console.assert(multiply(5, 7) === 35);
 console.assert(multiply(5, 8) === 40);
 console.assert(multiply(5, 9) === 45);
-*/
+
 /**
  * @param {Number} A to add to B
  * @param {Number} B to add to A
@@ -216,22 +214,19 @@ console.assert(multiply(5, 9) === 45);
 
 
 function divide(A, B){
-  return B / A;
+  return A / B;
 };
 
 //Zero division produces infinity
 
 console.assert(divide(1, 1) === 1);
-console.assert(divide(1, 2) === 2);
-console.assert(divide(1, 3) === 3);
-console.assert(divide(1, 4) === 4);
-console.assert(divide(1, 5) === 5);
-console.assert(divide(1, 6) === 6);
-console.assert(divide(1, 7) === 7);
-console.assert(divide(1, 8) === 8);
-console.assert(divide(1, 9) === 9);
+console.assert(divide(1, 2) === 0.5);
 
-console.assert(divide(2, 1) === 0.5);
+console.assert(divide(1, 4) === 0.25);
+console.assert(divide(1, 5) === 0.2);
+console.assert(divide(1, 8) === 0.125);
+
+console.assert(divide(2, 1) === 2);
 console.assert(divide(2, 2) === 1);
 
 
