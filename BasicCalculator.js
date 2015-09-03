@@ -284,6 +284,45 @@ console.assert(multiply(5, 7) === 35);
 console.assert(multiply(5, 8) === 40);
 console.assert(multiply(5, 9) === 45);
 
+console.assert(multiply(6, 1) === 6);
+console.assert(multiply(6, 2) === 12);
+console.assert(multiply(6, 3) === 18);
+console.assert(multiply(6, 4) === 24);
+console.assert(multiply(6, 5) === 30);
+console.assert(multiply(6, 6) === 36);
+console.assert(multiply(6, 7) === 42);
+console.assert(multiply(6, 8) === 48);
+console.assert(multiply(6, 9) === 54);
+
+console.assert(multiply(7, 1) === 7);
+console.assert(multiply(7, 2) === 14);
+console.assert(multiply(7, 3) === 21);
+console.assert(multiply(7, 4) === 28);
+console.assert(multiply(7, 5) === 35);
+console.assert(multiply(7, 6) === 42);
+console.assert(multiply(7, 7) === 49);
+console.assert(multiply(7, 8) === 56);
+console.assert(multiply(7, 9) === 63);
+
+console.assert(multiply(8, 1) === 8);
+console.assert(multiply(8, 2) === 16);
+console.assert(multiply(8, 3) === 24);
+console.assert(multiply(8, 4) === 32);
+console.assert(multiply(8, 5) === 40);
+console.assert(multiply(8, 6) === 48);
+console.assert(multiply(8, 7) === 56);
+console.assert(multiply(8, 8) === 64);
+console.assert(multiply(8, 9) === 72);
+
+console.assert(multiply(9, 1) === 9);
+console.assert(multiply(9, 2) === 18);
+console.assert(multiply(9, 3) === 27);
+console.assert(multiply(9, 4) === 36);
+console.assert(multiply(9, 5) === 45);
+console.assert(multiply(9, 6) === 54);
+console.assert(multiply(9, 7) === 63);
+console.assert(multiply(9, 8) === 72);
+console.assert(multiply(9, 9) === 81);
 /**
  * @param {Number} A to add to B
  * @param {Number} B to add to A
@@ -297,7 +336,6 @@ function divide(A, B){
 };
 
 //Zero division produces infinity
-
 console.assert(divide(1, 1) === 1);
 console.assert(divide(1, 2) === 0.5);
 
@@ -307,17 +345,59 @@ console.assert(divide(1, 8) === 0.125);
 
 console.assert(divide(2, 1) === 2);
 console.assert(divide(2, 2) === 1);
+console.assert(divide(2, 4) === 0.5);
+console.assert(divide(2, 5) === 0.4);
+console.assert(divide(2, 8) === 0.25);
 
-
+console.assert(divide(3, 1) === 3);
 console.assert(divide(3, 2) === 1.5);
 console.assert(divide(3, 3) === 1);
+console.assert(divide(3, 4) === 0.75);
+console.assert(divide(3, 5) === 0.6);
+console.assert(divide(3, 6) === 0.5);
+console.assert(divide(3, 8) === 0.375);
 
+console.assert(divide(4, 1) === 4);
 console.assert(divide(4, 2) === 2);
 console.assert(divide(4, 4) === 1);
+console.assert(divide(4, 5) === 0.8);
+console.assert(divide(4, 8) === 0.5);
 
+console.assert(divide(5, 1) === 5);
 console.assert(divide(5, 2) === 2.5);
 console.assert(divide(5, 4) === 1.25);
 console.assert(divide(5, 5) === 1);
+console.assert(divide(5, 8) === 0.625);
+
+console.assert(divide(6, 1) === 6);
+console.assert(divide(6, 2) === 3);
+console.assert(divide(6, 3) === 2);
+console.assert(divide(6, 4) === 1.5);
+console.assert(divide(6, 5) === 1.2);
+console.assert(divide(6, 6) === 1);
+console.assert(divide(6, 8) === 0.75);
+
+console.assert(divide(7, 1) === 7);
+console.assert(divide(7, 2) === 3.5);
+console.assert(divide(7, 4) === 1.75);
+console.assert(divide(7, 5) === 1.4);
+console.assert(divide(7, 7) === 1);
+console.assert(divide(7, 8) === 0.875);
+
+console.assert(divide(8, 1) === 8);
+console.assert(divide(8, 2) === 4);
+console.assert(divide(8, 4) === 2);
+console.assert(divide(8, 5) === 1.6);
+console.assert(divide(8, 8) === 1);
+
+console.assert(divide(9, 1) === 9);
+console.assert(divide(9, 2) === 4.5);
+console.assert(divide(9, 3) === 3);
+console.assert(divide(9, 4) === 2.25);
+console.assert(divide(9, 5) === 1.8);
+console.assert(divide(9, 6) === 1.5);
+console.assert(divide(9, 8) === 1.125);
+console.assert(divide(9, 9) === 1);
 
 /**
  * @param {Number} A to add to B
