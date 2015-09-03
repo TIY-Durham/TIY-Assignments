@@ -137,4 +137,105 @@ Once a function has been defined, it can be _invoked_ by
 
 `typeof "Hello" // “string"`
 
+###if, else statement
+
+	Statement that says if what is in the first statement is true then run the code that is in the {}. Else run this code. 
+
+	if ( 3 > 2) {
+    	    // run this code
+	}
+
+	else {
+  	    // run this code
+	}
+
+###{} Block Operator
+
+Delimits a block statement. 
+
+   `{
+    	statement A;
+    	statement B;
+    }`
+
+###while statement
+
+Creates a loop. Used when the number of repeats needed is not known. Will continue to repeat _as long as_ the condition is `true`
+
+	`while(condition) {
+		//code;
+	 }`
+
+ex: This is a loop within a function. It will print `“I’m looping!”` three times. 
+
+	`var count = 0;
+	 var loop = function(count) {
+		while(count <3 ) {
+			console.log(“I’m looping!”);
+			count ++;
+		}
+	 };`
+
+###do-while loop
+
+A `do-while` loop runs _at least once_ no matter what, then checks if the conditions is true (it will run as long as it is true).
+
+	`do
+		//statement;
+	 while (condition);`
+
+ex: This will run once, printing out `“I’m going to stop looping because my condition is false!”`.
+
+	`var loopCondition = false;
+	 do {
+		console.log(“I’m going to stop looping because my condition is false!”);
+	 } while (loopCondition);`
+	
+###Switch Statement
+
+A statement that evaluates an expression by matching it’s value to a _case clause_ and executes the code within the clause if it is the same. 
+
+	‘switch (expression) {
+	    case value1:
+		//code
+		break;
+	    case value2:
+		//code
+		break;
+	    case value3:
+		//code
+		break;
+	    default:
+		//code that executes if none of the values match
+	 }`
+
+###For Loop
+	
+A `for loop` repeats a specified amount of times till the condition evaluates false.
+
+ex: This will print out from 1-10 (i.e. 1, 2, 3…10) 
+
+	`for (var i = 1; i < 11; i ++) {
+		console.log (i);
+	}`
+
+###For…In Loop
+	
+A `for…in` loop repeats a specific variable over a set of properties in an object. For each property it executes a specific statement.
+
+	`for (variable in object) {
+  		//statements
+	}`
+
+ex: In this example the properties in `myObj` are pushed into the array `myKeys`.
+
+
+	`var myObj = {a: 1, b: 2, c: 3}, myKeys = [];
+ 
+	for (var property in myObj) {
+  		  myKeys.push(property);
+	}`
+ 
+	`myKeys; //['a','b','c'];`
+
 
