@@ -1,8 +1,13 @@
 {
   "name": "tiy-assignments",
   "version": "0.0.0",
+<<<<<<< HEAD
   "description": "StringCalculator.js",
   "main": "StringCalculator.js",
+=======
+  "description": "basicCalculator",
+  "main": "BasicCalculator.js",
+>>>>>>> 9b0e1e3d36e9983d23970b245cb9fb3f66b8d83e
   "scripts": {
     "test": "mocha"
   },
