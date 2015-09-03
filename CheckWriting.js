@@ -7,6 +7,13 @@ test('toEnglish: `0` to `9`', function(){
   assert.equal(toEnglish(0), "zero");
   assert.equal(toEnglish(1), "one");
   assert.equal(toEnglish(2), "two");
+  assert.equal(toEnglish(3), "three");
+  assert.equal(toEnglish(0), "four");
+  assert.equal(toEnglish(1), "five");
+  assert.equal(toEnglish(2), "six");
+  assert.equal(toEnglish(3), "seven");
+  assert.equal(toEnglish(2), "eight");
+  assert.equal(toEnglish(3), "nine");
   // et cetera, et cetera, et cetera...
 }); // END test(toEnglish)
 
