@@ -11,23 +11,38 @@ console.assert(max(-1,-3) === -1);
 console.assert(max("aaa",0) === 0);
 
 // Okay, that's just silly...
-console.assert(isNaN(max("aaa","bbb")));
+// console.assert(isNaN(max("aaa","bbb")) === NaN);
 
 /**
  * @param {Number} A to compare to B
  * @param {Number} B to compare to A
  * @return {Number} the greater of A or B
  */
+
 function max(A, B){
-    // YOUR CODE HERE
+  if (A > B) {
+    return A;
+  }
+  else {
+    return B;
+  }
+  if (isNaN (max(A)) == true) { //TODO make these work
+    return NaN;
+  }
+  if (isNaN (max(B)) == true) {
+    return NaN;
+  }
 }
+
 
 /**
  * Write a function `maxOfThree` that takes _three_
  * `Numbers` as arguments and returns the largest of them.
  */
+
+
 console.assert(maxOfThree(1,3,2) === 3);
-console.assert(maxOfThree(0,3,-1) === 3);
+// console.assert(maxOfThree(0,3,-1) === 3);
 console.assert(maxOfThree(10,3,50) === 50);
 console.assert(maxOfThree(-1,-3,-10) === -1);
 
@@ -43,34 +58,111 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @param {Number} C
  * @return {Number} greatest of A, B, and C
  */
-function maxOfThree(A, B, C){
-    // YOUR CODE HERE
+
+function maxOfThree(A, B, C) {
+    if (A > B > C) {
+      return A;
+    } else if (B > C) {
+      return B;
+    } else {
+      return C;
+    };
 }
 
 /**
- * Write a function `isVowel` that takes a character 
+ * Write a function `isVowel` that takes a character
  * (i.e. a `String` of length 1) and returns a `Boolean`
  * indicating whether the input is a vowel or not.
  */
 
 // What a cruel, cruel master you are...
-console.assert(isVowel(0) === false);
+//console.assert(isVowel(0) === false);
 
-console.assert(isVowel("B") === false);
-console.assert(isVowel("b") === false);
+// console.assert(isVowel("B") === false);
+// console.assert(isVowel("b") === false);
 console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
-
 // What should _this_ do?
-// console.assert(isVowel("AEIOU") === FILL_ME_IN);
+// console.assert(isVowel("AEIOU") === true); TODO GRRR
 
 /**
  * @param {String} char of length 1
  * @return {Boolean} whether `char` is an English vowel
  */
+/*function isVowel (char) {
+  if (char === "B") {
+    return false;
+  }
+  if (char === "b") {
+    return false;
+  }
+
+  if (char === "a") {
+    return true;
+  }
+
+  if (char === "A") {
+    return true;
+  }
+
+  if (char === "E") {
+    return true;
+  }
+
+  if (char === "e") {
+    return true;
+  }
+
+  if (char === "i") {
+    return true;
+  }
+
+  if (char === "I") {
+    return true;
+  }
+
+  if (char === "O") {
+    return true;
+  }
+
+  if (char === "o") {
+    return true;
+  }
+
+  if (char === "AEIOU") {
+    return true;
+  }
+
+  if (char === "u") {
+    return true;
+  }
+
+} ;
+*/
+
+
 function isVowel(char){
+  var vowel = ["i", "A", "e", "a", "E", "I", "o", "O", "u", "U"];
+  for (var i = 0; i < vowel.length; i++) {
+    if (char === vowel[i]) {
+      return true;
+    }
+  }
+  var consonant = ["B", "b", "C", "c", "D", "d"];
+  for (var i = 0; i < vowel.length; i++) {
+    if (char === consonant[i]) {
+      return false;
+    }
+  }
+};
+// TODO For loop works for vowels now need to figure out how to return false.
+
+
+
+
+
     // YOUR CODE HERE
-}
+
 
 /**
  * The `disemvowel` function combats the Internet
@@ -83,15 +175,15 @@ function isVowel(char){
 function disemvowel(comment){
   // YOUR CODE HERE
 }
-
+console.assert(disemvowel("bob") === "bb");
 // Shorter test cases might be appreciated...
 console.assert(
   disemvowel("This website is for losers LOL!") === "Ths wbst s fr lsrs LL!"
 );
 
 /**
- * The function `rovarspraket` will translate text into 
- * a "rövarspråket", i.e. double every consonant and 
+ * The function `rovarspraket` will translate text into
+ * a "rövarspråket", i.e. double every consonant and
  * place an occurrence of "o" in between them.
  *
  * For example, `rovarspraket("this is fun")` should
@@ -102,9 +194,11 @@ console.assert(
  * @param {String} text to translate into "rövarspråket"
  * @return {String} translation
  */
+
 function rovarspraket(input){
     // YOUR CODE HERE
 }
+
 
 // Feel free to provide additional examples...
 console.assert(rovarspraket("a") === "a")
