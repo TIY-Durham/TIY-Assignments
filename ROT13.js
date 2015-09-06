@@ -6,10 +6,15 @@
  * @return {String}
  */
 function reverse(S){
-    // YOUR CODE HERE: NO INTERNET COPY-PASTA!
-}
+  var empty = "";
+  for (var i = S.length - 1; i >= 0; i--) {
+    empty += S[i]; }
+return empty;
 
-console.assert(reverse("") === ""); // Really?
+};
+    // YOUR CODE HERE: NO INTERNET COPY-PASTA!
+
+// console.assert(reverse("") === ""); // Really?
 
 console.assert(reverse("A") === "A"); // Jerk.
 
@@ -38,10 +43,18 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
-function encode(phrase/*, N */){
-    // YOUR CODE HERE... EMPHASIS ON **YOUR**
-}
 
+ /*TODO string.prototype.charCodeAt
+        String.fromCharCode(65, 66, 67);  // "ABC"
+        */
+
+function encode(phrase /*,N*/){
+  return phrase.charCodeAt();
+
+}
+//   return fromCharCode(phrase);
+// }
+console.assert(encode("a") === 97);
 /**
  * Function `decode` accepts a `phrase` and `N` and
  * decoded it appropriately, i.e. every _word_ character
@@ -56,6 +69,7 @@ function decode(phrase, N){
 }
 
 // Produce more examples, please...
+
 console.assert(encode("hello") === "uryyb");
 console.assert(encode("uryyb") === "hello");
 
