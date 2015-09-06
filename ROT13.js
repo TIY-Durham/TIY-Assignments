@@ -51,7 +51,7 @@ console.assert(
 function encode(phrase /*,N*/){
   var code = phrase.split("");
   for (var i = 0; i < code.length; i++) {
-    return code[i].charCodeAt();
+    console.log (code[i].charCodeAt());
   }
 };
 
