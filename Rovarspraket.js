@@ -168,8 +168,7 @@ function isVowel(char){
  * @return {String} cmmnt dsmvwld
  */
 function disemvowel(comment){
-  return comment.replace(/[aeiouAEIOU]/, "");
-// TODO only removes first instance of each vowel. Need to find way to remove all. 
+  return comment.replace(/[aeiou]/ig, "");
 
   // YOUR CODE HERE
 }
@@ -194,8 +193,7 @@ console.assert(
  */
 
 function rovarspraket(input){
-    // YOUR CODE HERE
-}
+  return comment.replace(/[aeiouAEIOU+]/, "");} //
 
 
 // Feel free to provide additional examples...
