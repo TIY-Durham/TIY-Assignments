@@ -78,8 +78,8 @@ function maxOfThree(A, B, C) {
 // What a cruel, cruel master you are...
 //console.assert(isVowel(0) === false);
 
-// console.assert(isVowel("B") === false);
-// console.assert(isVowel("b") === false);
+console.assert(isVowel("B") === false);
+console.assert(isVowel("b") === false);
 console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 // What should _this_ do?
@@ -155,11 +155,6 @@ function isVowel(char){
     }
   }
 };
-// TODO For loop works for vowels now need to figure out how to return false.
-
-
-
-
 
     // YOUR CODE HERE
 
@@ -173,6 +168,9 @@ function isVowel(char){
  * @return {String} cmmnt dsmvwld
  */
 function disemvowel(comment){
+  return comment.replace(/[aeiouAEIOU]/, "");
+// TODO only removes first instance of each vowel. Need to find way to remove all. 
+
   // YOUR CODE HERE
 }
 console.assert(disemvowel("bob") === "bb");
