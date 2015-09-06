@@ -193,7 +193,8 @@ console.assert(
  */
 
 function rovarspraket(input){
-  return comment.replace(/[aeiouAEIOU+]/, "");} //
+  return input.replace(/[^aeiou]/ig, "$&o$&");}
+  // tests correctly in replit. 
 
 
 // Feel free to provide additional examples...
