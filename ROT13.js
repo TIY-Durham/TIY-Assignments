@@ -49,11 +49,22 @@ console.assert(
         */
 
 function encode(phrase /*,N*/){
-  return phrase.charCodeAt();
+  var code = phrase.split("");
+  for (var i = 0; i < code.length; i++) {
+    return code[i].charCodeAt();
+  }
+};
 
-}
-//   return fromCharCode(phrase);
-// }
+
+
+
+
+
+
+
+
+
+
 console.assert(encode("a") === 97);
 /**
  * Function `decode` accepts a `phrase` and `N` and
