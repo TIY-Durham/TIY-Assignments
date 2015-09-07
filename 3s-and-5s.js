@@ -16,10 +16,10 @@ function ten(){
   var values = '';
   for(var i = 0; i < 10; i ++) {
     if (i % 3 === 0) {
-      values += (i); // TODO maybe add continue? HOW DO I LOOP ALL VALUES AND RETURN THEM!!!???
+      values += (i); 
     }
   }
-  return values [i];
+  return values;
 };
 
 function twenty(){
