@@ -15,10 +15,10 @@ test('generating the Fibonacci sequence', function(){
 function fibonacci(n) {
   var seq = [0, 1, 2, 3, 5, 8, 13, 21];
   for(var i = 0; i <= n; i++) {
-    var a = seq[0] += seq[1]; // this limits too much! Should pull out new variable each time. 
+    var a = seq[0] += seq[1]; // this limits too much! Should pull out new variable each time.
     var b = a
 
-    //need to collect what comes out in an array.
+    //need to collect what comes out in an array. Use .push()?
   }
   (A += B)
 
@@ -33,6 +33,8 @@ test('just even numbers?', function(){
   expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]);
   // More tests, perhaps?
 }); // END test(evens)
+
+//TODO: To get even numbers run through a function where n % 2 === 0
 
 test('summing lists of Number', function(){
   assert.equal(sum([ ]), 0);
