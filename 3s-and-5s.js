@@ -5,39 +5,43 @@ var test = require('mocha').it,
 
 
 test(/*'getting a list of multiples of 3', */function () {
-  expect(ten()).to.be(0, 3, 6, 9);
-  expect(twenty()).to.be(0, 3, 6, 9, 12, 15, 18);
+  expect(ten()).to.be("0369");
+  expect(twenty()).to.be("0369121518");
   expect(thirty()).to.be(0, 3, 6, 9, 12, 15, 18, 21, 24, 27);
 });
 
 
 function ten(){
   var count = 0;
-  var values = '';
+  var values = "";
   for(var i = 0; i < 10; i ++) {
     if (i % 3 === 0) {
-      values += (i); 
+      values += (i);
+    }
+  }
+  return values.split("");
+};
+
+function twenty(){
+  var count = 0;
+  var values = "";
+  for(var i = 0; i < 20; i ++) {
+    if (i % 3 === 0) {
+      values += (i);
     }
   }
   return values;
 };
 
-function twenty(){
-  var count = 0;
-  for(var i = 0; i < 20; i ++) {
-    if (i % 3 === 0) {
-      console.log(i);
-    }
-  }
-};
-
 function thirty(){
   var count = 0;
+  var values = "";
   for(var i = 0; i < 30; i ++) {
     if (i % 3 === 0) {
-      console.log(i);
+      values += (i);
     }
   }
+  return values;
 };
 
 // END test 3s
