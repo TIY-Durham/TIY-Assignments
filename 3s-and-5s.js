@@ -62,7 +62,7 @@ function ten(){
   return values.split("");
 };
 
-function twenty(){
+function twenty(){ //TODO make this iterate from 10 and set the split to 2 digits. Repeat for 50.
   var count = 0;
   var values = "";
   for(var i = 0; i < 20; i ++) {
@@ -70,7 +70,7 @@ function twenty(){
       values += (i);
     }
   }
-  return values.split(" "); // splits 12 into '1', '2'
+  return values.split(" "); 
 };
 
 function fifty(){
@@ -81,5 +81,5 @@ function fifty(){
       values += (i);
     }
   }
-  return values.split(""); //TODO figure out how NOT to split double digits.
+  return values.split("");
 };
