@@ -14,9 +14,11 @@ test('generating the Fibonacci sequence', function(){
 
 function fibonacci(n) {
   var seq = [0, 1, 2, 3, 5, 8, 13, 21];
-  for(var i = 0; i <= n; i++) {
-    var a = seq[0] += seq[1]; // this limits too much! Should pull out new variable each time.
-    var b = a
+  var seqn = x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence
+  for(var i = 0; i <= n; i++) { //start at 0 then run n times.
+    var a = x += y;  // 0+1 var a = 1
+    var b = a; // need x to be equal to result?
+    var c = a 
 
     //need to collect what comes out in an array. Use .push()?
   }
