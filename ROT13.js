@@ -48,14 +48,15 @@ console.assert(
 
 function encode(phrase, N){
   var code = phrase.split("");
-  for (var i = 0; i < code.length; i++) {
+  for (var i=0; i < code.length; i++) {
     code[i] = code[i].charCodeAt() + N;
     if (code[i] > 122) {
-      code[i] = String.fromCharCode(code[i] -26);
+      code[i] = String.fromCharCode(code[i] - 26);
     } else {
       code[i] = String.fromCharCode(code[i]);
     }
   }
+  return code.join("");
 }
 
 
@@ -86,8 +87,9 @@ function decode(phrase, N){
 
 // Produce more examples, please...
 
-console.assert(encode("hello") === "uryyb");
-console.assert(encode("uryyb") === "hello");
-
+// console.assert(encode("hello") === "uryyb"); ADDED N VALUE
+// console.assert(encode("uryyb") === "hello"); ADDED N VALUE
+console.assert(encode("bye", 2) === "dag")
 console.assert(encode("hello", 2) === "jgnnq")
 console.assert(decode("jgnnq", 2) === "hello")
+console.assert(decode("dag", 2) === "bye")
