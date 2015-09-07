@@ -13,18 +13,22 @@ test('generating the Fibonacci sequence', function(){
 }); // END test(fibonacci)
 
 function fibonacci(n) {
-  var seq = [0, 1, 2, 3, 5, 8, 13, 21];
-  var seqn = x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence
+  // var seq = [0, 1, 2, 3, 5, 8, 13, 21];
+  var x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence. If this is the sequence then z must change.
   for(var i = 0; i <= n; i++) { //start at 0 then run n times.
-    var a = x += y;  // 0+1 var a = 1
-    var b = a; // need x to be equal to result?
-    var c = a 
+    var z = x += y;  // 0+1 var a = 1
+    var  x = y; // need x to be equal to result?
+    var y = z //it just shifts!
 
-    //need to collect what comes out in an array. Use .push()?
   }
-  (A += B)
-
+  return [x, y, z];
 }
+/*currently if n=0 returns [1,1,1];
+ n=1 returns [1,2,2];
+n=2 returns [2,3,3]
+*/
+
+
 // Hey, where's `fibonacci`...? Uh oh...
 
 test('just even numbers?', function(){
@@ -37,6 +41,26 @@ test('just even numbers?', function(){
 }); // END test(evens)
 
 //TODO: To get even numbers run through a function where n % 2 === 0
+function fibonacci(n) {
+  // var seq = [0, 1, 2, 3, 5, 8, 13, 21];
+  var x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence. If this is the sequence then z must change.
+  for(var i = 0; i <= n; i++) { //start at 0 then run n times.
+    var z = x += y;  // 0+1 var a = 1
+
+    var  x = y; // need x to be equal to result?
+
+    var y = z //it just shifts!
+  }
+
+  if(x % 2 === 0, y % 2 === 0, z % 2 === 0) { //Still returning odd numbers. Not filtering them. Rework statement.
+    return [x, y, z];
+  }
+
+};
+
+
+
+
 
 test('summing lists of Number', function(){
   assert.equal(sum([ ]), 0);
