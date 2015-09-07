@@ -314,6 +314,94 @@ console.log(splits);
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
+###Array.prototype.join()
+
+A method used to join the elements of an array into a string. 
+
+`str = arr.join([separator = ‘,’])`
+
+ex:
+
+`var a = ['Wind', 'Rain', 'Fire'];
+var myVar1 = a.join();      // assigns 'Wind,Rain,Fire' to myVar1
+var myVar2 = a.join(', ');  // assigns 'Wind, Rain, Fire' to myVar2
+var myVar3 = a.join(' + '); // assigns 'Wind + Rain + Fire' to myVar3
+var myVar4 = a.join('');    // assigns 'WindRainFire' to myVar4`
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+
+###String.prototype.charAt()
+
+A method that returns the specified character from a string. 
+
+`str.charAt(index)`
+
+ex:
+
+`var anyString = 'Brave new world';
+
+console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
+console.log("The character at index 1   is '" + anyString.charAt(1)   + “'");
+
+// The character at index 0   is 'B'
+// The character at index 1   is ‘r'`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
+
+###String.prototype.charCodeAt()
+
+A method that returns the Unicode value of a character. 
+
+`str.charCodeAt(index)`
+
+ex: Returns the value of “A” because it is at index 0.
+
+`'ABC'.charCodeAt(0); // returns 65`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+
+
+###String.prototype.fromCharCode()
+
+Method that returns a string of characters translated from Unicode values. It is static so it is always used with `String` not an object you created. 
+
+`String.fromCharCode(num1[,…[, numN]])`
+
+ex:
+
+`String.fromCharCode(65, 66, 67);  // “ABC"`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+
+Unicode values:
+http://www.asciitable.com/
+
+
+###Length
+
+Property used to represent the length of a string/array/function properties.
+
+`str.length`
+
+`array.length`
+
+`function.length`
+
+
+###isNaN()
+
+Function used to determine if a value is a number. 
+
+`isNaN(testValue)`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
+
+
+
+
 
 	
 
