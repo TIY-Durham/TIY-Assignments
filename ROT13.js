@@ -44,28 +44,23 @@ console.assert(
  * @return {String} encoded with ROT13
  */
 
- /*TODO string.prototype.charCodeAt
-        String.fromCharCode(65, 66, 67);  // "ABC"
-        */
 
-function encode(phrase /*,N*/){
+
+function encode(phrase, N){
   var code = phrase.split("");
   for (var i = 0; i < code.length; i++) {
-    console.log (code[i].charCodeAt());
+    code[i] = code[i].charCodeAt() + N;
+    if (code[i] > 122) {
+      code[i] = String.fromCharCode(code[i] -26);
+    } else {
+      code[i] = String.fromCharCode(code[i]);
+    }
   }
-};
+}
 
 
-
-
-
-
-
-
-
-
-
-console.assert(encode("a") === 97);
+// console.assert(encode("hello", 2) === "106", "103", "110", "110", "113");
+// console.assert(encode("a") === 97);
 /**
  * Function `decode` accepts a `phrase` and `N` and
  * decoded it appropriately, i.e. every _word_ character
@@ -76,8 +71,18 @@ console.assert(encode("a") === 97);
  * @return {String} decoded by ROT-N
  */
 function decode(phrase, N){
-    // YOUR CODE HERE
+ var code = phrase.split("");
+ for (var i=0; i < code.length; i++) {
+   code[i] = code[i].charCodeAt() - N;
+   if (code[i] < 97) {
+     code[i] = String.fromCharCode(code[i] + 26);
+   } else {
+     code[i] = String.fromCharCode(code[i]);
+   }
+ }
+ return code.join("");
 }
+
 
 // Produce more examples, please...
 
