@@ -265,6 +265,56 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expression
 There are many ways to create the desired results. 
 
 http://regexr.com/
+
+###Arrays
+
+They are global objects that store lists of data.
+
+ex: To create an array:
+
+`var letters = [“a”, “b”, “c”];`
+
+ex: To call an array item:
+
+`var item = letters[0];
+// “a”`
+
+Can be used with `Array.prototype.`
+`.push` to add to the end of an array
+`.pop` which removes from the end of an array
+`.unshift` which adds to the front of an array
+`.shift which removes from the front of an array
+and others…
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+###Method
+
+An object reference to a function. It is when an object’s property consists of a function that is used in other objects as well. 
+
+
+###String.prototype.split()
+
+The `split()` method separates a `String` object into an array of strings. 
+
+`str.split([separator[,limit]])`
+
+The *separator* is a regular expression used to specify the splitting of the string. _Optional_.
+The *limit* sets how many splits are to be made. _Optional_.
+
+ex: 
+
+`var myString = “Hello world. How are you doing?”;
+ var splits = myString.split( “ “, 3);
+
+console.log(splits);
+
+// Hello, World, How`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+
 	
 
 
