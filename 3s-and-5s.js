@@ -5,9 +5,9 @@ var test = require('mocha').it,
 
 
 test(/*'getting a list of multiples of 3', */function () {
-  expect(ten()).to.be("0369");
-  expect(twenty()).to.be("0369121518");
-  expect(thirty()).to.be(0, 3, 6, 9, 12, 15, 18, 21, 24, 27);
+  expect(ten()).to.be("0","3", "6", "9");
+  expect(twenty()).to.be("0","3", "6", "9", "12", "15", "18");
+  expect(thirty()).to.be("0", "3", "6", "9", "12", "15", "18", "21", "24", "27");
 });
 
 
@@ -30,7 +30,7 @@ function twenty(){
       values += (i);
     }
   }
-  return values;
+  return values.split(""); // splits 12 into '1', '2'
 };
 
 function thirty(){
@@ -41,7 +41,7 @@ function thirty(){
       values += (i);
     }
   }
-  return values;
+  return values.split("");
 };
 
 // END test 3s
