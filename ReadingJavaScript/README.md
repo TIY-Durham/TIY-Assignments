@@ -237,5 +237,34 @@ ex: In this example the properties in `myObj` are pushed into the array `myKeys`
 	}`
  
 	`myKeys; //['a','b','c'];`
+	
+###Return
+
+A statement that ends the execution of a function and returns a specified value. If no value is defined it returns `undefined`. 
+
+`return [value];`
+
+
+###Regular Expressions (Regex)
+
+In JavaScript they are objects that use patterns to match characters in strings. They can be used with `match`, `replace`, `search`, and `split` methods of `String`.
+They can be constructed in two ways:
+
+ex: Literal:
+
+`var re = /ab+c/;`
+
+ex: Constructor:
+
+`var re = new RegExp(“ab+c”);`
+
+Patterns are created using characters and special characters. 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+There are many ways to create the desired results. 
+
+http://regexr.com/
+	
 
 
