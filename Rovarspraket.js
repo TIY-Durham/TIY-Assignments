@@ -26,7 +26,7 @@ function max(A, B){
   else {
     return B;
   }
-  if (isNaN (max(A)) == true) { //TODO make these work
+  if (isNaN (max(A)) == true) {
     return NaN;
   }
   if (isNaN (max(B)) == true) {
@@ -83,7 +83,7 @@ console.assert(isVowel("b") === false);
 console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 // What should _this_ do?
-// console.assert(isVowel("AEIOU") === true); TODO GRRR
+// console.assert(isVowel("AEIOU") === true);
 
 /**
  * @param {String} char of length 1
@@ -194,7 +194,7 @@ console.assert(
 
 function rovarspraket(input){
   return input.replace(/[^aeiou]/ig, "$&o$&");}
-  // tests correctly in replit. 
+  // tests correctly in replit.
 
 
 // Feel free to provide additional examples...
@@ -202,4 +202,4 @@ console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
 console.assert(rovarspraket("cat") === "cocatot")
 console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-console.assert(rovarspraket(0) === "0")
+//console.assert(rovarspraket(0) === ("undefined"))
