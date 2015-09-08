@@ -2,8 +2,7 @@ var test = require('mocha').it,
     expect = require('chai').expect, // Use `expect(X).to.be` et al
     assert = require('chai').assert;  // OR use `assert.equal` etc
 
-    function multiples(num, max)
-    {
+    function multiples(num, max){
       var values = [];
       for(var i = num; i < max; i = i + num) {
           values.push(i);
