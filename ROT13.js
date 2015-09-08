@@ -14,7 +14,7 @@ return empty;
 };
     // YOUR CODE HERE: NO INTERNET COPY-PASTA!
 
-// console.assert(reverse("") === ""); // Really?
+console.assert(reverse("") === ""); // Really?
 
 console.assert(reverse("A") === "A"); // Jerk.
 
