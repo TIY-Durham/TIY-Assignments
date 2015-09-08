@@ -2,7 +2,7 @@ var text = require('mocha').it,
   expects = require('chai').expect;
 
 test('generating the Fibonacci sequence', function(){
-  expect(fibonacci(0)).to.deep.equal([ 0 ]);
+  expect(fibonacci(0)).to.deep.equal([ ]);
   expect(fibonacci(1)).to.deep.equal([ 1 ]);
   expect(fibonacci(2)).to.deep.equal([ 1, 2 ]);
   expect(fibonacci(5)).to.deep.equal([1, 2, 3, 5 ]);
@@ -13,20 +13,26 @@ test('generating the Fibonacci sequence', function(){
 }); // END test(fibonacci)
 
 function fibonacci(n) {
-  // var seq = [0, 1, 2, 3, 5, 8, 13, 21];
-  var x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence. If this is the sequence then z must change.
-  for(var i = 0; i <= n; i++) { //start at 0 then run n times.
-    var z = x += y;  // 0+1 var a = 1
-    var  x = y; // need x to be equal to result?
-    var y = z //it just shifts!
+  var seq = [];
+  var i = 1;
+  var idx = 0;
+  while (i <= n) {
 
+    seq.push(i);
+
+    if (idx == 0 ) {
+      i += 1;
+    }
+    else {
+      i += seq[idx - 1];
+    }
+
+    idx++;
   }
-  return [x, y, z];
-}
-/*currently if n=0 returns [1,1,1];
- n=1 returns [1,2,2];
-n=2 returns [2,3,3]
-*/
+
+  return seq;
+};
+
 
 
 // Hey, where's `fibonacci`...? Uh oh...
@@ -37,41 +43,45 @@ test('just even numbers?', function(){
   expect(evens([ 1, 1, 1 ]).to.deep.equal([ ]);
   expect(evens([ 2 ]).to.deep.equal([ 2 ]);
   expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]);
+  expect(evens([ 1, 2, 3, 4,]).to.deep.equal([ 2, 4]);
+  expect(evens([ 1, 2, 3, 4, 5, 6]).to.deep.equal([ 2, 4, 6]);
   // More tests, perhaps?
 }); // END test(evens)
 
-//TODO: To get even numbers run through a function where n % 2 === 0
-function fibonacci(n) {
-  // var seq = [0, 1, 2, 3, 5, 8, 13, 21];
-  var x = 0, y = 1, z = 1 // 0+1= 1 this is how to start the sequence. If this is the sequence then z must change.
-  for(var i = 0; i <= n; i++) { //start at 0 then run n times.
-    var z = x += y;  // 0+1 var a = 1
 
-    var  x = y; // need x to be equal to result?
-
-    var y = z //it just shifts!
+function evens(inputList) {
+  var seq = [];
+  for (var i = 0; i < inputList.length; i ++){
+    if (inputList[i] % 2 === 0)
+      seq.push(inputList[i]);
   }
 
-  if(x % 2 === 0, y % 2 === 0, z % 2 === 0) { //Still returning odd numbers. Not filtering them. Rework statement.
-    return [x, y, z];
-  }
-
+  return seq;
 };
 
-
-
-
-
 test('summing lists of Number', function(){
-  assert.equal(sum([ ]), 0);
-  assert.equal(sum([ 1 ]), 1);
-  assert.equal(sum([ 1, 1 ]), 2);
+  expect(sum([ ])to.equal(0);
+  expect(sum([ 1 ]).to.equal(1);
+  expect(sum([ 1, 1 ]).to.equal(2);
+  expect(sum([ 2, 2 ]).to.equal(4);
+  expect(sum([ 3, 3 ]).to.equal(6);
   // ...et cetera, et cetera, et cetera.
 }); // END test(sum)
 
-// You expect me to write `sum`, too?
+function sum(inputList) {
+  var total = 0;
+  for(var i = 0; i < inputList.length; i ++)
+  {
+    // total = total + inputList[i];
+    total += inputList[i];
+  }
+
+  return total;
+};
 
 test('summing even Fibonacci numbers?', function(){
-  expect( sum(evens(fibonacci(0))) ).to.equal(FILL_ME_IN); // nice.
-  // There really should be more code in here...
-}); // END test(dat CHAIN tho)
+  expect( sum(evens(fibonacci(0))) ).to.equal(0); // nice.
+  expect( sum(evens(fibonacci(0))) ).to.equal(0);
+
+});
+  // END test(dat CHAIN tho)
