@@ -2,24 +2,24 @@ var test = require('mocha').it,
     expect = require('chai').expect, // Use `expect(X).to.be` et al
     assert = require('chai').assert;  // OR use `assert.equal` etc
 
-    function multiples(num, max){
-      var values = [];
-      for(var i = num; i < max; i = i + num) {
-          values.push(i);
+    function threes(max){
+      var th = [];
+      for(var i = 3; i < max; i = i + 3) {
+          th.push(i);
       }
-      return values;
+      return th;
     };
 
     function ten(){
-      return multiples(3, 10);
+      return threes(10);
     };
 
     function twenty(){
-      return multiples(3, 20);
+      return threes(20);
     };
 
     function fifty(){
-      return multiples(3, 50);
+      return threes(50);
     };
 
 test('getting a list of multiples of 3', function () {
@@ -30,20 +30,36 @@ test('getting a list of multiples of 3', function () {
 
 // END test 3s
 
+
+
+function fives(max){
+  var fv = [];
+  for(var i = 5; i < max; i = i + 5) {
+      fv.push(i);
+  }
+  return fv;
+};
+
+function ten5(){
+  return fives(10);
+};
+
+function twenty5(){
+  return fives(20);
+};
+
+function fifty5(){
+  return fives(50);
+};
+
 test('getting a list of multiples of 5', function () {
   expect(ten5()).to.deep.equal([5]);
   expect(twenty5()).to.deep.equal([5, 10, 15]);
   expect(fifty5()).to.deep.equal([5, 10, 15, 20, 25, 30, 35, 40, 45]);
 });
 
-function ten5(){
-  return multiples(5, 10);
-};
-
-function twenty5(){
-  return multiples(5, 20);
-};
-
-function fifty5(){
-  return multiples(5, 50);
-};
+function arrayAdd(fives(50), threes(50)) {
+  for (var i = 0; i< fv.length; i++){
+    sum.push(fv[] += th[]);
+  }
+}
