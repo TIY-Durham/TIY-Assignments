@@ -91,5 +91,12 @@ function decode(phrase, N){
 // console.assert(encode("uryyb") === "hello"); ADDED N VALUE
 console.assert(encode("bye", 2) === "dag")
 console.assert(encode("hello", 2) === "jgnnq")
+console.assert(encode("pie", 13) === "cvr")
+console.assert(encode("cat", 0) === "cat")
+console.assert(encode("dog", 1) === "eph")
+console.assert(encode("wow", undefined) === "\u0000\u0000\u0000")
+
 console.assert(decode("jgnnq", 2) === "hello")
 console.assert(decode("dag", 2) === "bye")
+console.assert(decode("cvr", 13) === "pie")
+console.assert(decode("eph", 1) === "dog")
