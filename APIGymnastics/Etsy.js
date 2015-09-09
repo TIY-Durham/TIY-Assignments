@@ -21,9 +21,21 @@ function length (items){
 //TESTS TRUE
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
+  function average(values) {
+    var added = []
+    var prices = items["price"];
+    var idx = 0;
+    while(i < items.length) {
+      var i += idx
+      add.push(i)
+
+    }
+    // body...
+  }
 
   expect(yourAnswer).to.be.closeTo(23.63, 0.01);
 });
+
 
 
 
@@ -36,7 +48,7 @@ test('finding that perfect $15 item', function(){
    function pricedBetween(items, min, max ) {
      var matches = [];
      var price = items["price"];
-     for (var i =0; i < items.length; i++) {
+     for (var i = 0; i < items.length; i++) {
        if (price[i] <= 14) {
          matches.push(i);
        }
@@ -47,12 +59,6 @@ test('finding that perfect $15 item', function(){
      };
 
    };
-
-
-
-
-
-
     // Just a suggestion, really...
 
 
