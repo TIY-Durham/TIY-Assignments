@@ -22,14 +22,11 @@ function length (items){
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
   function average(values) {
-    var added = []
-    added.push(items["price"]);
+    var added = [items["price"]];
     var idx = 0;
     for(var i = 0; i < added.length; i++) {
-      added[i] += idx
-
-
-
+      added[i] += idx;
+      idx ++;
     }
     // body...
   };
