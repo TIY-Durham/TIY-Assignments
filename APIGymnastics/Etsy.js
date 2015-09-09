@@ -1,5 +1,5 @@
 // Put `items.json` in your `APIGymnastics` directory...
-var items = require('items.json');
+var items = require('items.json'); // required <file> should be '/items.json' in order for the file to be OUTSIDE of the Node_modules folder.
     test = require('mocha').it,
     expect = require('chai').expect;
 
@@ -21,6 +21,74 @@ function length (items){
 //TESTS TRUE
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
+  //To calculate the average price, we need:
+  // *each item's price
+  var prices = [];
+
+  function forEachItem(index, length){
+    item = items[index];
+    prices.push(item.price);
+
+  }
+  //WHILE LOOP BREAK DOWN
+  precondition;
+  while (condition){
+    code;
+    postcondition;
+  }
+
+  // DO WHILE LOOP
+  precondition;
+  do {
+    code;
+    postcondition;
+  } while (condition);
+
+  // FOR LOOP
+  for (precondition; condition; postcondition) {
+    code;
+  }
+
+  // array.forEach(function(parameters))
+  items.forEach(function(item, index, all){ //calls this callback function gets envoked for every item in items array
+    forEachItem(index, index + 1);
+  })
+  // when a function wants a function as an arguement it's called a callback function
+
+
+
+
+};
+
+  //For the first item price: (baby steps)
+  forEachItem(0, 1);
+  forEachItem(1, 2);
+  forEachItem(2, 3);
+  forEachItem(3, 4);
+
+//   {
+//   var item = items[index];
+//
+//   expect(item).to.be.an('object');
+//   expect(item.price).to.be.a('number');
+//   expect(item.price).to.be.equal(12);
+//
+//   prices.push(item.price);
+//
+//   expect(prices).to.deep.equal([ 12 ]);
+//   expect(prices.length).to.equal(1);
+// }
+  //END of first price test.
+
+
+
+  // *sum of all item's price
+  // *totla number of items
+  //
+  // *sum of all item's prices / number of items
+
+
+
   function average(values) {
     var added = [items["price"]];
     var idx = 0;
@@ -62,7 +130,7 @@ test('finding that perfect $15 item', function(){
    };
     // function contains a for loop that runs through and if the called property
     //is greater than or equal to 14 it pushes the value to matches array.
-    //If the value is less than or equal to 18 it pushes the value to matches array. 
+    //If the value is less than or equal to 18 it pushes the value to matches array.
 
 
   expect( pricedBetween(items, 14, 18) ).to.deep.equal([
