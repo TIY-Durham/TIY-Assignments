@@ -13,27 +13,48 @@ test('this is the easy one', function(){
 
   expect(items.length).to.equal(25); // It's haunting me now...
 });
-/*function length (items){
+function length (items){
   var items = [];
   return items.length;
 
-}*/
-
+}
+//TESTS TRUE
 test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
-  items.concat
 
   expect(yourAnswer).to.be.closeTo(23.63, 0.01);
 });
 
+
+
 test('finding that perfect $15 item', function(){
+
   /**
    * @param {Array} items to search through
    * @return {Array} of `items` with `price` between `min` and `max` USD
    */
-  function pricedBetween(items, min, max){
+   function pricedBetween(items, min, max ) {
+     var matches = [];
+     var price = items["price"];
+     for (var i =0; i < items.length; i++) {
+       if (price[i] <= 14) {
+         matches.push(i);
+       }
+       if (price[i] <= 18) {
+         matches.push(i);
+       }
+
+     };
+
+   };
+
+
+
+
+
+
     // Just a suggestion, really...
-  }
+
 
   expect( pricedBetween(items, 14, 18) ).to.deep.equal([
     // Can you find their names _without_ code first?
