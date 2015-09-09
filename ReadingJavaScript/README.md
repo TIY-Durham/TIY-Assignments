@@ -237,5 +237,172 @@ ex: In this example the properties in `myObj` are pushed into the array `myKeys`
 	}`
  
 	`myKeys; //['a','b','c'];`
+	
+###Return
+
+A statement that ends the execution of a function and returns a specified value. If no value is defined it returns `undefined`. 
+
+`return [value];`
+
+
+###Regular Expressions (Regex)
+
+In JavaScript they are objects that use patterns to match characters in strings. They can be used with `match`, `replace`, `search`, and `split` methods of `String`.
+They can be constructed in two ways:
+
+ex: Literal:
+
+`var re = /ab+c/;`
+
+ex: Constructor:
+
+`var re = new RegExp(“ab+c”);`
+
+Patterns are created using characters and special characters. 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+There are many ways to create the desired results. 
+
+http://regexr.com/
+
+###Arrays
+
+They are global objects that store lists of data.
+
+ex: To create an array:
+
+`var letters = [“a”, “b”, “c”];`
+
+ex: To call an array item:
+
+`var item = letters[0];
+// “a”`
+
+Can be used with `Array.prototype.`
+`.push` to add to the end of an array
+`.pop` which removes from the end of an array
+`.unshift` which adds to the front of an array
+`.shift which removes from the front of an array
+and others…
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+###Method
+
+An object reference to a function. It is when an object’s property consists of a function that is used in other objects as well. 
+
+
+###String.prototype.split()
+
+The `split()` method separates a `String` object into an array of strings. 
+
+`str.split([separator[,limit]])`
+
+The *separator* is a regular expression used to specify the splitting of the string. _Optional_.
+The *limit* sets how many splits are to be made. _Optional_.
+
+ex: 
+
+`var myString = “Hello world. How are you doing?”;
+ var splits = myString.split( “ “, 3);
+
+console.log(splits);
+
+// Hello, World, How`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+###Array.prototype.join()
+
+A method used to join the elements of an array into a string. 
+
+`str = arr.join([separator = ‘,’])`
+
+ex:
+
+`var a = ['Wind', 'Rain', 'Fire'];
+var myVar1 = a.join();      // assigns 'Wind,Rain,Fire' to myVar1
+var myVar2 = a.join(', ');  // assigns 'Wind, Rain, Fire' to myVar2
+var myVar3 = a.join(' + '); // assigns 'Wind + Rain + Fire' to myVar3
+var myVar4 = a.join('');    // assigns 'WindRainFire' to myVar4`
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+
+###String.prototype.charAt()
+
+A method that returns the specified character from a string. 
+
+`str.charAt(index)`
+
+ex:
+
+`var anyString = 'Brave new world';
+
+console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
+console.log("The character at index 1   is '" + anyString.charAt(1)   + “'");
+
+// The character at index 0   is 'B'
+// The character at index 1   is ‘r'`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
+
+###String.prototype.charCodeAt()
+
+A method that returns the Unicode value of a character. 
+
+`str.charCodeAt(index)`
+
+ex: Returns the value of “A” because it is at index 0.
+
+`'ABC'.charCodeAt(0); // returns 65`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+
+
+###String.prototype.fromCharCode()
+
+Method that returns a string of characters translated from Unicode values. It is static so it is always used with `String` not an object you created. 
+
+`String.fromCharCode(num1[,…[, numN]])`
+
+ex:
+
+`String.fromCharCode(65, 66, 67);  // “ABC"`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+
+Unicode values:
+http://www.asciitable.com/
+
+
+###Length
+
+Property used to represent the length of a string/array/function properties.
+
+`str.length`
+
+`array.length`
+
+`function.length`
+
+
+###isNaN()
+
+Function used to determine if a value is a number. 
+
+`isNaN(testValue)`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
+
+
+
+
+
+	
 
 
