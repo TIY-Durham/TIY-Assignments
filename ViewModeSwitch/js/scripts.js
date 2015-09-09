@@ -11,3 +11,9 @@ to show it is the list icon that is selected.When it does the CSS rules for the 
 
 The other icon is a grid. When it is clicked javascript appends its class to "cbp-vm-selected" and adds
 "cbp-vm-view-grid" to the div which then triggers the CSS rule to apply the grid styling to the div.
+
+Like I wrote in the Nested Accordian scripts.js, I don't really understand DOMs however I imagine that a window object would be called for in this case
+because the page is open in a tab on my browser which is a window.
+
+Also the document object would be the entry point into the web pages' content i.e. it helps return HTML elements
+in the browser.
