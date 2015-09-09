@@ -28,8 +28,11 @@ test('finding the average price', function(){
       added[i] += idx;
       idx ++;
     }
+    added /= items.length;
     // body...
-  };
+  }; //Have a for loop that runs through an array that contains all the data
+  //called from the 'price' property. Then it adds each integer it pulls out and
+  //adds it to the idx which is the last value of the array.
 
   expect(yourAnswer).to.be.closeTo(23.63, 0.01);
 });
