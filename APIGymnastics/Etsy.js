@@ -50,7 +50,7 @@ test('finding that perfect $15 item', function(){
      var matches = [];
      var price = items["price"];
      for (var i = 0; i < items.length; i++) {
-       if (price[i] <= 14) {
+       if (price[i] >= 14) {
          matches.push(i);
        }
        if (price[i] <= 18) {
@@ -60,7 +60,9 @@ test('finding that perfect $15 item', function(){
      };
 
    };
-    // Just a suggestion, really...
+    // function contains a for loop that runs through and if the called property
+    //is greater than or equal to 14 it pushes the value to matches array.
+    //If the value is less than or equal to 18 it pushes the value to matches array. 
 
 
   expect( pricedBetween(items, 14, 18) ).to.deep.equal([
