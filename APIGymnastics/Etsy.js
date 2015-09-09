@@ -23,15 +23,16 @@ test('finding the average price', function(){
   var yourAnswer = "start with `items`; use `Array` methods";
   function average(values) {
     var added = []
-    var prices = items["price"];
+    added.push(items["price"]);
     var idx = 0;
-    while(i < items.length) {
-      var i += idx
-      add.push(i)
+    for(var i = 0; i < added.length; i++) {
+      added[i] += idx
+
+
 
     }
     // body...
-  }
+  };
 
   expect(yourAnswer).to.be.closeTo(23.63, 0.01);
 });
@@ -68,7 +69,7 @@ test('finding that perfect $15 item', function(){
 });
 
 test('pond hopping', function(){
-  expect( /* your answer */ ).to.deep.equal({
+  expect( your answer  ).to.deep.equal({
     name: "1970s Schlitz Malt Liquor Glass Beer Pitcher",
     price: 18.00
   });
