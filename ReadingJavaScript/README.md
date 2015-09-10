@@ -507,6 +507,13 @@ Represents any event of the DOM. Contains properties and methods to an event. Is
 **Properties**
 
 `Event.bubbles` : A boolean that indicates whether an event “bubbles” up through the DOM or not. Bubbling is when an event is captured and handled by the innermost element then propagated by an outer element. 
+ex: 
+```HTML
+<div> <!-- this is the last place an event goes. It is the outermost element --> 
+    <h1>This is where the event goes after the p element</h1>	
+	<p>This is where the event starts. It is the innermost element</p> 
+</div>
+```
 
 `Event.stopPropagation` : Prevents bubbling of an action.
 
