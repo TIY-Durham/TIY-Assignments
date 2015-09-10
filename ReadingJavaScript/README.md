@@ -496,6 +496,75 @@ Interface that represents a generic collection of elements and offers methods an
 List containing objects that are collections of nodes and are returned by Node.childNodes and the document.querySelectorAll method. 
 >>>>>>> 05--lost-yak
 
+###[Event Reference] (https://developer.mozilla.org/en-US/docs/Web/Events)
+
+List of DOM events, which are represented by objects.
+
+###[Event Interface] (https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+Represents any event of the DOM. Contains properties and methods to an event. Is implemented by many other interfaces.
+
+**Properties**
+
+`Event.bubbles` : A boolean that indicates whether an event “bubbles” up through the DOM or not. Bubbling is when an event is captured and handled by the innermost element then propagated by an outer element. 
+
+`Event.stopPropagation` : Prevents bubbling of an action.
+
+`Event.target` : A reference to the object that originally dispatched an event. 
+
+
+###[MouseEvent] (https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)
+
+Interface that represents events that occur due to the use of a mouse or other pointing device.
+
+[`click`] (https://developer.mozilla.org/en-US/docs/Web/Events/click) : Event often used with MouseEvent. Is fired when a mouse is pressed and released on a single element. 
+
+[`dbclick`] (https://developer.mozilla.org/en-US/docs/Web/Events/dblclick) : An event fired when a mouse is double clicked on a single element.
+
+[`mousedown`] (https://developer.mozilla.org/en-US/docs/Web/Events/mousedown) : An event that is fired when a mouse button is clicked on a single element _but not released_.
+
+[`contextmenu`] (https://developer.mozilla.org/en-US/docs/Web/Events/contextmenu) :  Event fired when the right button of a mouse is clicked. A context menu is displayed.
+
+[`mouseenter`] (https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter) : An event that is fired when a mouse pointer is moved over the element that has a listener attached. 
+
+
+
+##Event Types
+[`scroll `] (https://developer.mozilla.org/en-US/docs/Web/Events/scroll) :  Event fired when the document viewed or an element has been scrolled. 
+
+[`change`] (https://developer.mozilla.org/en-US/docs/Web/Events/change) : The change event is fired for `<input>`, `<select>`, and `<textarea>` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value
+
+[`submit`] (https://developer.mozilla.org/en-US/docs/Web/Events/submit) : The submit event is fired when a form is submitted. _Only_ on the form element,    not the button or submit input. (Forms are submitted, not buttons.)
+
+[`unload`] (https://developer.mozilla.org/en-US/docs/Web/Events/unload) : The unload event is fired when the document or a child resource is being unloaded.
+
+[`load`] (https://developer.mozilla.org/en-US/docs/Web/Events/load) : The load event is fired when a resource and its dependent resources have finished loading.
+
+
+###[Form Events] (http://www.w3schools.com/tags/ref_eventattributes.asp)
+
+Events that can be used on the HTML element `<form>`.
+
+`onblur` : Fires the moment that the element loses focus
+
+`onchange` : Fires the moment when the value of the element is changed
+
+`oncontextmenu` : Script to be run when a context menu is triggered
+
+`onfocus` : Fires the moment when the element gets focus
+
+`oninput` : Script to be run when an element gets user input
+
+`oninvalid` : Script to be run when an element is invalid
+
+`onreset` :  Fires when the Reset button in a form is clicked
+
+`onsearch` : Fires when the user writes something in a search field (for  <input="sea rch”>)
+
+`onselect` : Fires after some text has been selected in an element
+
+`onsubmit` : Fires when a form is submitted
+
 	
 
 
