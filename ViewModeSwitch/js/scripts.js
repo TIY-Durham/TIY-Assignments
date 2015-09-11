@@ -17,3 +17,20 @@ because the page is open in a tab on my browser which is a window.
 
 Also the document object would be the entry point into the web pages' content i.e. it helps return HTML elements
 in the browser.
+*/
+
+// 1) capture elements
+// 2) add eventListener
+// 3) add getEventByClass
+
+var list = document.getElementsByClassName("cbp-vm-list");
+
+list.addEventListener('click', function(){
+  list.className+= 'cbp-vm-selected';
+});
+
+var grid = document.getElementsByClassName("cbp-vm-grid");
+
+grid.addEventListener('click', function(){
+  grid.className+= 'cbp-vm-selected';
+});
