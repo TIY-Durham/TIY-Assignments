@@ -26,8 +26,65 @@
 // What does it do?
 // When I click
 //   on a heading...
+
+// WORKING FUNTION FOR MAKING ACCORDION OPEN
+// !!!!!!!!!!!!!!!!!DO NOT REMOVE!!!!!!!!!!!!!!!!!!!!
+
 var heading = document.querySelector('.cbp-nttrigger');
 
+heading.addEventListener('click', function(){
+  document.querySelector("li").className= "cbp-ntopen";
+});
+
+
+
+
+
+
+
+/*
+
+// Testing function to remove class
+var openAcc = document.querySelector("li").className="cbp-ntopen";
+function removeClass ("cbp-ntopen", "li"){
+  heading.addEventListener('click', function(){
+    var rxp = new RegExp( "s?b"+"cbp-ntopen"+"b", "g" );
+    cn = cn.replace( rxp, '' );
+    openAcc.className= " ";
+  });
+};
+*/
+
+/*
+// Testing If/Else Statement
+var heading = document.querySelector('.cbp-nttrigger');
+var openAcc = document.querySelector("li").className="cbp-ntopen";
+
+
+  // if openAcc {
+  //   heading.addEventListener('click', function(){
+  //     openAcc.className= " ";
+  //   });
+  // };
+  //
+  // else{
+  var heading = document.querySelector('.cbp-nttrigger');
+
+    heading.addEventListener('click', function(){
+      document.querySelector("li").className="cbp-ntopen";
+    });
+  // };
+*/
+// function removeClass( classname, element ) {
+//     var cn = element.className;
+//     var rxp = new RegExp( "s?b"+classname+"b", "g" );
+//     cn = cn.replace( rxp, '' );
+//     element.className = cn;
+// }
+
+
+
+var heading = document.querySelector('.cbp-nttrigger');
 
 heading.addEventListener('click', function(){
   document.querySelector("li").className= "cbp-ntopen";
