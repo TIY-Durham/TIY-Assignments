@@ -36,12 +36,19 @@ heading.addEventListener('click', function(){
   document.querySelector("li").className= "cbp-ntopen";
 });
 
+// WORKING CODE FOR MAKING IT CLOSE
+{
+var openAcc = document.querySelector("li").className="cbp-ntopen";
+
+heading.addEventListener('click', function(){
+  document.querySelector("li").className=" ";
+});
+
 */
 
 
-
-
   // WORKS FOR BOTH OPEN AND CLOSE
+  /*
 var heading = document.querySelector('.cbp-nttrigger');
 
 heading.addEventListener('click', function(){
@@ -52,22 +59,77 @@ heading.addEventListener('click', function(){
   };
 
 });
+*/
 
+var heading = document.querySelectorAll('h3.cbp-nttrigger');
 
+for (var i = 0; i < heading.length; i++) {
+ //loops through the nodelist for class cbp-nttrigger
+  heading[i].addEventListener('click', function(){
 
-/*
+      var openAcc = document.querySelectorAll("li.cbp-ntopen");
+      if (openAcc.length > 0){
+        for (var i=0; i<openAcc.length; i++) {
+          openAcc[i].className= "";
+        }
 
-{
-var openAcc = document.querySelector("li").className="cbp-ntopen";
+      } else{
+        document.querySelectorAll("li").className= "cbp-ntopen";
+      }
 
-heading.addEventListener('click', function(){
-  document.querySelector("li").className=" ";
-});
+    })
+
 };
 
-/*var heading = document.querySelector('.cbp-nttrigger');
 
-heading.addEventListener('click', function(){
-  document.querySelector("li").className= "cbp-ntopen";
-});
-*/
+
+// TEST AREA:
+var heading = document.querySelectorAll('h3.cbp-nttrigger');
+var openAcc = document.querySelectorAll("li.cbp-ntopen");
+
+function makeClickHandler(i) {
+  for (var i=0; i<openAcc.length; i++) {
+    openAcc[i].className= "";
+      if (openAcc.length > 0){
+        // fill in 
+      } else {
+    document.querySelectorAll("li").className= "cbp-ntopen";
+  }
+  }
+}
+
+for (var i = 0; i < heading.length; i++) {
+  heading[i].addEventListener('click', makeClickHandler(i));
+}
+
+  // STOPPED HERE!!!
+
+
+
+// MISC:
+//       if (openAcc.length > 0){
+//         for (var i=0; i<openAcc.length; i++) {
+//           openAcc[i].className= "";
+//         }
+//
+//       } else{
+//         document.querySelectorAll("li").className= "cbp-ntopen";
+//       }
+//
+//     })
+//
+// };
+
+// EXAMPLE FOR FUNCTION OUTSIDE OF LOOP
+var elems = document.getElementsByClassName("myClass"), i;
+
+function makeClickHandler(i) {
+    "use strict";
+    return function () {
+        this.innerHTML = i;
+    };
+}
+
+for (i = 0; i < elems.length; i++) {
+    elems[i].addEventListener("click", makeClickHandler(i));
+}
