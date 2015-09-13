@@ -22,7 +22,8 @@ in the browser.
 // 1) capture elements
 // 2) add eventListener
 // 3) add getEventByClass
-
+/*
+// BASIC CODE
 var list = document.getElementsByClassName("cbp-vm-list");
 
 list.addEventListener('click', function(){
@@ -34,3 +35,48 @@ var grid = document.getElementsByClassName("cbp-vm-grid");
 grid.addEventListener('click', function(){
   grid.className+= 'cbp-vm-selected';
 });
+*/
+
+
+// CODE WITH FUNCTION BEFORE LISTENER
+// GRID
+// function addSelectorG() {
+//   if (grid !== "cbp-vm-icon cbp-vm-grid cbp-vm-selected") {
+//     list.className= "cbp-vm-icon cbp-vm-list ' ' ";
+//     grid.className+= 'cbp-vm-grid';
+//   }
+// }
+//
+// var grid = document.getElementsByClassName("cbp-vm-icon cbp-vm-grid cbp-vm-selected");
+//
+// grid.addEventListener('click', addSelectorG);
+
+// LIST
+// function addSelectorL() {
+//   if (list !== "cbp-vm-icon cbp-vm-list cbp-vm-selected") {
+//     // grid.className= "cbp-vm-icon cbp-vm-grid ' ' ";
+//     list.className+= 'cbp-vm-selected';
+//   }
+// }
+//
+// var list = document.getElementsByClassName("cbp-vm-icon cbp-vm-list");
+//
+// list.addEventListener('click', addSelectorL);
+
+
+// CODE WITH EXTENDED CLASS NAME AND IF STATEMENTS
+
+var list = document.getElementsByClassName("cbp-vm-icon cbp-vm-list");
+
+list.addEventListener('click', function(){
+  if (list !== "cbp-vm-icon cbp-vm-list cbp-vm-selected") {
+    //  grid.className= "cbp-vm-icon cbp-vm-grid ' ' ";
+     list.className+= 'cbp-vm-selected';
+  }
+});
+// //
+// var grid = document.getElementsByClassName("cbp-vm-icon cbp-vm-grid cbp-vm-selected");
+//
+// grid.addEventListener('click', function(){
+//   grid.className+= 'cbp-vm-selected';
+// });
