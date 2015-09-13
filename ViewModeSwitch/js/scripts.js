@@ -22,7 +22,15 @@ in the browser.
 // 1) capture elements
 // 2) add eventListener
 // 3) add getEventByClass
+
+// BABY STEPS--ASSIGN SELECTED TO LIST
+
+// document.getElementsByClassName('cbp-vm-list').className+= "cbp-vm-selected";
+
+
+
 /*
+
 // BASIC CODE
 var list = document.getElementsByClassName("cbp-vm-list");
 
@@ -35,7 +43,7 @@ var grid = document.getElementsByClassName("cbp-vm-grid");
 grid.addEventListener('click', function(){
   grid.className+= 'cbp-vm-selected';
 });
-*/
+
 
 
 // CODE WITH FUNCTION BEFORE LISTENER
@@ -65,18 +73,39 @@ grid.addEventListener('click', function(){
 
 
 // CODE WITH EXTENDED CLASS NAME AND IF STATEMENTS
-
-var list = document.getElementsByClassName("cbp-vm-icon cbp-vm-list");
-
-list.addEventListener('click', function(){
-  if (list !== "cbp-vm-icon cbp-vm-list cbp-vm-selected") {
-    //  grid.className= "cbp-vm-icon cbp-vm-grid ' ' ";
-     list.className+= 'cbp-vm-selected';
-  }
-});
-// //
+//
+// var list = document.getElementsByClassName("cbp-vm-icon cbp-vm-list");
+//
+// list.addEventListener('click', function(){
+//   if (list !== "cbp-vm-icon cbp-vm-list cbp-vm-selected") {
+//      grid.className= "cbp-vm-icon cbp-vm-grid ' ' ";
+//      list.className+= 'cbp-vm-selected';
+//   }
+// });
+//
 // var grid = document.getElementsByClassName("cbp-vm-icon cbp-vm-grid cbp-vm-selected");
 //
 // grid.addEventListener('click', function(){
 //   grid.className+= 'cbp-vm-selected';
 // });
+
+*/
+
+var buttons = document.querySelector("div #cbp-vm");
+var list = document.querySelector("a.cbp-vm-icon.cbp-vm-list");
+var grid = document.querySelector("a.cbp-vm-icon.cbp-vm-grid");
+
+list.addEventListener('click', function(listButton){
+  var listButton = listButton.currentTarget;
+  buttons.className = "cbp-vm-switcher cbp-vm-view-list";
+  list.className = 'cbp-vm-icon cbp-vm-list cbp-vm-selected';
+  grid.className = 'cbp-vm-icon cbp-vm-grid';
+});
+
+grid.addEventListener('click', function(gridButton){
+  var currentButton = gridButton.currentTarget;
+  buttons.className = "cbp-vm-switcher cbp-vm-view-grid";
+
+  grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
+  list.className = "cbp-vm-icon cbp-vm-list";
+});
