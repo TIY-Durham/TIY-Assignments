@@ -1,6 +1,6 @@
 /*
 1.) Make variables for all of the elements I will be manipulating
-    a. start with the form element and one type with in
+    a. start with the form element and one type within the form
     b. make variable for one of each type of form elements
     c. make them all!
 
@@ -14,3 +14,23 @@
 3.) Make eventListeners
     a. make eventListener for form
     b. make eventListeners as needed
+*/
+
+var form = document.querySelector('cbp-mc-form');
+
+var firstName = document.getElementById('first_name');
+
+
+
+function logForm () {
+  console.log
+}
+
+function first () {
+
+}
+
+
+form.addEventListener('submit', logForm);
+
+firstName.addEventListener('keypress' first)
