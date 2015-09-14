@@ -61,15 +61,17 @@ heading.addEventListener('click', function(){
 });
 */
 // CODE FOR ALL UPPER LEVEL ACCORDIONS:
+//Should work. Have syntax error somewhere. GRRR!
 
 var heading = document.querySelectorAll('h3.cbp-nttrigger');
+
 for (var i = 0; i < heading.length; i++) {
-  heading[i].addEventListener('click', function() {
+  heading[i].addEventListener('click', function(){
     var parent = this.parentElement;
     if (parent.className !== "cbp-ntopen"){
-      parent.className = "cbp-ntopen";
+      parent.className= "cbp-ntopen";
     } else {
-      parent.className = "";
+      parent.className= "";
     }
   });
 }
