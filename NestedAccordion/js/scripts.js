@@ -47,7 +47,7 @@ heading.addEventListener('click', function(){
 */
 
 
-  // WORKS FOR BOTH OPEN AND CLOSE
+  // WORKS FOR BOTH OPEN AND CLOSE FOR ONE!
   /*
 var heading = document.querySelector('.cbp-nttrigger');
 
@@ -60,7 +60,24 @@ heading.addEventListener('click', function(){
 
 });
 */
+// CODE FOR ALL UPPER LEVEL ACCORDIONS:
 
+var heading = document.querySelectorAll('h3.cbp-nttrigger');
+for (var i = 0; i < heading.length; i++) {
+  heading[i].addEventListener('click', function() {
+    var parent = this.parentElement;
+    if (parent.className !== "cbp-ntopen"){
+      parent.className = "cbp-ntopen";
+    } else {
+      parent.className = "";
+    }
+  });
+}
+
+
+
+// TESTING FOR LOOPS
+/*
 var heading = document.querySelectorAll('h3.cbp-nttrigger');
 
 for (var i = 0; i < heading.length; i++) {
@@ -80,56 +97,42 @@ for (var i = 0; i < heading.length; i++) {
     })
 
 };
+*/
 
 
-
-// TEST AREA:
+// LOOPS THROUGH HEADINGS BUT DOESN'T ADD NTOPEN TO LI
+/*
 var heading = document.querySelectorAll('h3.cbp-nttrigger');
-var openAcc = document.querySelectorAll("li.cbp-ntopen");
+var liOat = document.getElementById('cbp-ntaccordion').firstChild;
+var liBears = liOats.nextSibling;
+var liJelly = liBears.nextSibling;
+var liDanish = liJelly.nextSibling;
+var liJujubes = document.getElementById('cbp-ntaccordion').lastChild;
+
+// var openAcc = document.querySelectorAll("li.cbp-ntopen");
 
 function makeClickHandler(i) {
-  for (var i=0; i<openAcc.length; i++) {
-    openAcc[i].className= "";
-      if (openAcc.length > 0){
-        // fill in 
-      } else {
-    document.querySelectorAll("li").className= "cbp-ntopen";
+    if (liOat.className === "cbp-ntopen"){
+      liOat.className= "";
+    } else{
+      liOat.className= "cbp-ntopen";
+    }
+
+    if (liBears.className === "cbp-ntopen") {
+      liBears.className= "";
+    } else{
+      liBears.className= "cbp-ntopen";
+    }
+
   }
-  }
-}
+
 
 for (var i = 0; i < heading.length; i++) {
   heading[i].addEventListener('click', makeClickHandler(i));
 }
 
-  // STOPPED HERE!!!
 
 
 
-// MISC:
-//       if (openAcc.length > 0){
-//         for (var i=0; i<openAcc.length; i++) {
-//           openAcc[i].className= "";
-//         }
-//
-//       } else{
-//         document.querySelectorAll("li").className= "cbp-ntopen";
-//       }
-//
-//     })
-//
-// };
 
 // EXAMPLE FOR FUNCTION OUTSIDE OF LOOP
-var elems = document.getElementsByClassName("myClass"), i;
-
-function makeClickHandler(i) {
-    "use strict";
-    return function () {
-        this.innerHTML = i;
-    };
-}
-
-for (i = 0; i < elems.length; i++) {
-    elems[i].addEventListener("click", makeClickHandler(i));
-}
