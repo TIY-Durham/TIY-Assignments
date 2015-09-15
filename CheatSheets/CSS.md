@@ -1,17 +1,61 @@
-# Reading CSS
+### [Display Property] (http://learnlayout.com/display.html)
 
-## Selectors
+Controls how HTML elements display in a page.
 
-## Properties
+**Example Values**
 
-### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
+`block`: Displays on new line and extends left to right. `<div>`, `<p>`, `<form>`
+`inline` : Does not disturb the flow of the other elements. `<span>`, `<a>`
+`none` : Hides an element as though it does not exist on a page. Often used with JavaScript to hide and show elements without deleting and recreating them. `<script>`
 
-The text color of an element and its decorations (??)
 
-#### Possible Values: [any `<color>` value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+###[Margin] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 
-* a hexadecimal color value: `#012345`, `#CCC`
-* a color keyword: `cornflowerblue`, `purple`, `orange`
-* RGB decimal notation: `rgb(0,0,0)`, `rgb(255, 255, 255)`
-* RGBa (transparency) notation: `rgba(0,0,0,0)`, `rgba(255, 255, 255, 0.8)`
-* HSL decimal notation: `hsl(0, 100%, 50%)`
+Property that sets the margin for all four sides of an element. 
+
+
+###[Box-Sizing] (http://learnlayout.com/box-sizing.html)
+
+Allows you to set a `box-sizing: border-box;` to make the padding and border of an element no longer increase in width.
+
+
+###[Position] (http://learnlayout.com/position.html)
+
+Property whose values effect the position of an element in the page. 
+
+**Example Values**
+
+* `static` : default value. Element is considered _not positioned_ if set to this value.
+ `relative` : Behaves like status unless `top`, `right`, `bottom`, or `left` is added. Adjusts away from its normal position but other content does not adjust with it. 
+ `fixed` : Element remains in the same place on a page even when scrolled. `top`, `right`,  `bottom`, and `left` are used.
+ `absolute` : Similar to fixed except it remains relative to the _nearest positioned ancestor_ or document body.
+
+
+###[Float] (http://learnlayout.com/float.html)
+
+Wraps text around images. Used with `top`, `right`, `bottom`, or `left`.
+
+
+###[Clear] (http://learnlayout.com/clear.html)
+
+Controls the behavior of floats by moving floated elements below preceding elements.
+
+
+###[Percent Width] (http://learnlayout.com/percent.html) 
+
+Used with images to help with resizing. It uses a percent measurement unit that is relative to the containing block. 
+
+
+###[Media Queries] (https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+Media queries enable specified media types to be custom displayed for various output devices.
+
+
+###[Inline-Block] (http://learnlayout.com/inline-block.html)
+
+Used to create grids of boxes.
+
+
+###[Column] (http://learnlayout.com/column.html)
+
+Properties used to make multi-column text. Must be used with prefixes like `webkit` and `moz`.
