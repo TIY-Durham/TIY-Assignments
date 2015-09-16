@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: #47a3da;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  color: #47a3da;
+}
+li {
+
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  color: #47a3da;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: grey;
+}
+
+a {
+  position: center;
+  text-decoration: none;
+  color: #47a3da;
+}
