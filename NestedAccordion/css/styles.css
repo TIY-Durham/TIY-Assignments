@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 40pt;
+  color: #47a3da;
+}
+
+.cbp-ntaccordion h3 {
+  font-family: Arial, sans-serif;
+  color: #47a3da;
+  font-size: 35pt;
+  clear:right;
+}
+
+li {
+  color: red;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  font-size: 25pt;
+  color: #47a3da;
+}
+
+h5 {
+  font-family: Arial, sans-serif;
+  font-size: 18pt;
+  color: #47a3da;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: grey;
+}
+
+a {
+  text-align: center;
+  position: center;
+  text-decoration: none;
+  color: #47a3da;
+}
+
+.container > header nav {
+  text-align: center;
+  float: right;
+  padding-bottom: 10px;
+}

@@ -23,6 +23,26 @@ Allows you to set a `box-sizing: border-box;` to make the padding and border of 
 
 Property whose values effect the position of an element in the page. 
 
+
+###[::before] (https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Abefore)
+
+Pseudo-element that is first child of the element it is under. Adds cosmetic content to an element by using the content property. Inline by default.
+
+
+###[::after] (https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+
+Pseudo-element that matches the last child of the selected element. Adds cosmetic content to an element by using the content property. Inline by default. 
+
+
+###[Pseudo-Elements] (https://github.com/Ricecoder/TIY-Assignments/edit/09--fistful-of-dollars/CheatSheets/CSS.md)
+
+Elements added to selectors that allow you to style certain parts of a document instead of describing a special state.
+
+
+###[Content] (https://developer.mozilla.org/en-US/docs/Web/CSS/content)
+
+Used with `::before` and `::after`. Generates content in an element. They are anonymous replaced elements.
+
 **Example Values**
 
 * `static` : default value. Element is considered _not positioned_ if set to this value.

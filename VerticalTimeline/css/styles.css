@@ -1,0 +1,52 @@
+h1 {
+  text-align: left;
+  color:  #47a3da;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+a {
+  text-align: left;
+  text-decoration: none;
+  padding-left: 15px;
+  color:  #47a3da
+}
+
+div.cbp_tmlabel {
+  background-color:  #47a3da;
+  float: right;
+  clear: left;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin: 10px
+
+}
+
+p {
+  font-family: sans-serif;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+time {
+  font-family: sans-serif;
+  color:  #47a3da;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 20px;
+}
+
+div .cbp_tmicon .cbp_tmicon-phone {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
