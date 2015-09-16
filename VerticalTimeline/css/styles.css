@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: sans-serif;
+}
+
+nav {
+  text-align: center;
+  text-decoration: none;
+}
+
+div.cbp_tmlabel {
+  background-color: blue;
+  float: right;
+  clear: left;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: white;
+  display: inline-block;
+  margin: 10px
+
+
+}
+
+p {
+  font-family: sans-serif;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+time {
+  font-family: sans-serif;
+  color: blue;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 20px;
+}
