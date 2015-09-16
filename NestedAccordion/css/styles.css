@@ -28,13 +28,18 @@ h3:before  {
   float: left;
 }
 
-h3:hover {
-  content: "\21d8"
+h3:hover:before {
+  content: "\21d8";
   color: #47a3da;
   float: left;
 
 }
-
+/*
+h3:after:hover:before {
+  content: "\21d5";
+  color: #47a3da;
+  float: left;
+}*/
 
 
 
