@@ -5,12 +5,14 @@ body {
 
 h1 {
   font-family: Arial, sans-serif;
+  font-size: 40px;
   color: #47a3da;
 }
 
 h3 {
   font-family: Arial, sans-serif;
   color: #47a3da;
+  font-size: 35px;
   clear:right;
 }
 
@@ -20,11 +22,13 @@ li {
 
 h4 {
   font-family: Arial, sans-serif;
+  font-size: 25px;
   color: #47a3da;
 }
 
 h5 {
   font-family: Arial, sans-serif;
+  font-size: 18px;
   color: #47a3da;
 }
 
@@ -42,5 +46,5 @@ a {
 .container > header nav {
   text-align: center;
   float: right;
-  clear: bottom;
+  padding-bottom: 10px;
 }
