@@ -98,3 +98,47 @@ Sets the max width of an element. Overrides width but not min-width. Uses pxs.
 ###[Min-Width] (https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
 
 Sets the minimum width of an element. Overrides both max-width and width. Uses pxs. 
+
+
+##Font Properties
+
+###[font-family] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+Allows use to apply a font or generic font family, such as sans-serif, to an element. You can add more than one value seperated by commas. These are viewed as alternatives incase the user does not have a specific font. 
+
+ex: In this example the text in the `<p>` would be displayed in Arial unless the user did not have this font in which case the computer would choose another sans-serif font that was available. 
+
+`p {
+  font-family: Arial, sans-serif;
+ }`
+ 
+ 
+###[font-size] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+
+Specifies the size of a font. Values: 
+`xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`;
+`larger`, `smaller`;
+`px`, `em`, `pt`;
+
+
+###[font-variant] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
+
+Allows for alternative glyphs. Shorthand for longer properties: `font-variant-caps`, `font-variant-numeric`, `font-variant-alternates`, `font-variant-ligatures`, and `font-variant-east-asian`. Values: `normal`, `none`.
+
+
+###[font-style] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+
+Let's you select _italic_ or _oblique_ faces within a fon-family. Values: `normal`, `italic`, `oblique`
+
+
+###[font-weight] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+
+Effects the boldness of a font. Values: `normal`, `bold`, `lighter`, `bolder`, `100-900`.
+
+
+###[line-height] (https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+
+Used on block level elements to specify the minimum height of the line boxes within. Values: `normal`, `<number>`, `<length>`, `<percentage>`
+
+
+ 
