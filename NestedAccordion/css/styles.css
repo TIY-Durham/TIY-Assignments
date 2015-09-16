@@ -11,12 +11,19 @@ h1 {
 h3 {
   font-family: Arial, sans-serif;
   color: #47a3da;
+  clear:right;
 }
-li {
 
+li {
+  color: red;
 }
 
 h4 {
+  font-family: Arial, sans-serif;
+  color: #47a3da;
+}
+
+h5 {
   font-family: Arial, sans-serif;
   color: #47a3da;
 }
@@ -30,4 +37,10 @@ a {
   position: center;
   text-decoration: none;
   color: #47a3da;
+}
+
+.container > header nav {
+  text-align: center;
+  float: right;
+  clear: bottom;
 }
