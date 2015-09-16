@@ -40,7 +40,7 @@ label {
 }
 
 input {
-  border: solid, #fffff; 1px;
+  border: solid, white, 1px;
   padding: 5px;
 
 }
