@@ -11,7 +11,7 @@ Controls how HTML elements display in a page.
 
 ###[Margin] (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 
-Property that sets the margin for all four sides of an element. 
+Property that sets the margin for all four sides of an element. Uses px. 
 
 
 ###[Box-Sizing] (http://learnlayout.com/box-sizing.html)
@@ -56,6 +56,25 @@ Media queries enable specified media types to be custom displayed for various ou
 Used to create grids of boxes.
 
 
+###[Padding] (https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
+Space between the element and it's border. Measured in px. Can be set for `top`, `right`, `bottom`, or `left`
+
+
 ###[Column] (http://learnlayout.com/column.html)
 
 Properties used to make multi-column text. Must be used with prefixes like `webkit` and `moz`.
+
+###[Border] (https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+
+Creates a border around an element. Values include; width (in px), style, and color. 
+
+
+###[Max-Width] (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
+
+Sets the max width of an element. Overrides width but not min-width. Uses pxs. 
+
+
+###[Min-Width] (https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
+
+Sets the minimum width of an element. Overrides both max-width and width. Uses pxs. 
