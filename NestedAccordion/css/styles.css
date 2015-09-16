@@ -9,16 +9,34 @@ h1 {
   color: #47a3da;
 }
 
+
+
 .cbp-ntaccordion h3 {
+  border-bottom: 2px, solid, grey;
   font-family: Arial, sans-serif;
   color: #47a3da;
   font-size: 35pt;
   clear:right;
+  cursor: pointer;
+
 }
 
-li {
-  color: red;
+
+h3:before  {
+  content: "\21d2";
+  color: #47a3da;
+  float: left;
 }
+
+h3:hover {
+  content: "\21d8"
+  color: #47a3da;
+  float: left;
+
+}
+
+
+
 
 h4 {
   font-family: Arial, sans-serif;
