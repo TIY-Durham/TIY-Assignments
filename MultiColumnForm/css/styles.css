@@ -39,6 +39,12 @@ label {
 
 }
 
+input {
+  border: solid, #fffff; 1px;
+  padding: 5px;
+
+}
+
 input.cbp-mc-submit {
   padding-top: 20px;
 }
