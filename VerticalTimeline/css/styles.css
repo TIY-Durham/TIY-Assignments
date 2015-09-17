@@ -13,8 +13,16 @@ a {
   color:  #47a3da
 }
 
+div.cbp_tmicon {
+  border-right: 0px solid green;
+
+}
+
+
 div.cbp_tmlabel {
   background-color:  #47a3da;
+  border-radius: 5px;
+  margin: 50px;
   float: right;
   clear: left;
   box-sizing: border-box;
