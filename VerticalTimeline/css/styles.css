@@ -6,29 +6,42 @@ h1 {
   padding-left: 15px;
 }
 
-a {
+a {                         /*nav links*/
   text-align: left;
   text-decoration: none;
   padding-left: 15px;
   color:  #47a3da
 }
 
-div.cbp_tmicon {
+ul.cbp_tmtimeline{          /*Vertical Line*/
+  border-left: 5px solid green;
+  margin-left: 30px;
+  display: inline-block;
+
+}
+
+div.cbp_tmicon {        /*circles*/
   height: 20px;
   width: 20px;
-  border: 1px solid #47a3da;
+  border: 3px solid #47a3da;
   border-radius: 20px;
+  display: inline-block;
 
 }
 
 
-div.cbp_tmlabel {
+div.cbp_tmlabel {               /*blue boxes*/         /*http://yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/*/
   background-color:  #47a3da;
   border-radius: 5px;
   margin: 50px;
   float: right;
+  display: inline;
   clear: left;
   box-sizing: border-box;
+}
+
+span {
+  display: block;
 }
 
 h2 {
