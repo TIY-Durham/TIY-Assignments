@@ -2,3 +2,9 @@
 max-width: 640px;
 max-height: 960px;
 **/
+@media (max-width: 640px) {}
+@media (max-height: 960px) {}
+
+div.cbp_tmlabel {
+  width: 31.3%auto;
+}  
