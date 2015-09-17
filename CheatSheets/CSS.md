@@ -100,7 +100,7 @@ Sets the max width of an element. Overrides width but not min-width. Uses pxs.
 Sets the minimum width of an element. Overrides both max-width and width. Uses pxs. 
 
 
-##Font Properties
+##Font/Text Properties
 
 ###[font-family] (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 
@@ -141,4 +141,19 @@ Effects the boldness of a font. Values: `normal`, `bold`, `lighter`, `bolder`, `
 Used on block level elements to specify the minimum height of the line boxes within. Values: `normal`, `<number>`, `<length>`, `<percentage>`
 
 
+###[text-indent] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+
+Sets how much space should be left before the beginning of the first line of the text content of an element. Values: `<length>`, `<percentage>`
+
+
+###[text-align] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+
+Aligns inline content within its parent block element. Values: `left`, `right`, `center`, `justify`, `justify-all`
+
+
+###[text-decoration] (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+
+Sets underline, overline, line-through, and blink to text. Values: `none`, `underline`, `overline`, `line-through`, `<color>`
  
+
+
