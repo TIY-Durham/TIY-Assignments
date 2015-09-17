@@ -14,7 +14,7 @@ a {                         /*nav links*/
 }
 
 ul.cbp_tmtimeline{          /*Vertical Line*/
-  border-left: 5px solid green;
+  border-left: 5px solid #47a3da;
   margin-left: 30px;
   display: inline-block;
 
