@@ -30,13 +30,7 @@ div.cbp_tmicon {        /*circles*/
 }
 
 
-.cbp_tmlabel {
-                 /*blue boxes*/
-    /*
-    yuiblog.com/
-    blog/2010/11/22/
-    css-quick-tip-css-arrows-and-shapes-without-markup/
-    */
+.cbp_tmlabel {                     /*blue boxes*/  /*yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/*/
   background-color:  #47a3da;
   border-radius: 5px;
   margin: 50px;
@@ -47,7 +41,7 @@ div.cbp_tmicon {        /*circles*/
   position: relative;
 }
 
-li:nth-child(odd) .cbp_tmlabel {
+li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
   background-color: #247cb1;
 }
 
