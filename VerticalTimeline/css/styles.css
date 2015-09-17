@@ -14,7 +14,10 @@ a {
 }
 
 div.cbp_tmicon {
-  border-right: 0px solid green;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #47a3da;
+  border-radius: 20px;
 
 }
 
