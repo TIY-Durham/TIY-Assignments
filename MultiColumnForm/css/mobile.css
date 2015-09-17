@@ -1,0 +1,90 @@
+/*https://developers.google.com/web/fundamentals/
+layouts/rwd-fundamentals/use-media-queries?hl=en*/
+/*http://stackoverflow.com/questions/12045893/
+which-are-the-most-important-media-queries-to-use-
+in-creating-mobile-responsive*/
+
+
+/*@media (max-width: 480px) {*/
+  body {
+    background-color: #47a3da;
+  }
+
+  span {
+    display: block;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  nav {
+    text-align: center;
+    display: block;
+    font-family: sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: white ;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  form {
+    text-align: center;
+    margin: auto;
+
+  }
+
+  label {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 15px;
+
+
+  }
+
+  .cbp-mc-form input  {
+
+  }
+
+  input {
+    border: 3px solid white;
+    padding: 5px;
+    background: #47a3da;
+
+  }
+
+  textarea {
+    background: #47a3da;
+    border: 3px solid white;
+  }
+
+  #country {
+    background: #47a3da;
+    border: 3px solid white;
+  }
+
+  #occupation {
+    background: #47a3da;
+    border: 3px solid white;
+  }
+
+  #talent {
+    background: #47a3da;
+    border: 3px solid white;
+  }
+
+  input.cbp-mc-submit {
+    color: white;
+    text-align: center;
+    background: #247cb1;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+  }

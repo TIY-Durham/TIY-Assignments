@@ -6,47 +6,104 @@ h1 {
   padding-left: 15px;
 }
 
-a {
+a {                         /*nav links*/
   text-align: left;
   text-decoration: none;
   padding-left: 15px;
   color:  #47a3da
 }
 
-div.cbp_tmlabel {
-  background-color:  #47a3da;
-  float: right;
-  clear: left;
-  box-sizing: border-box;
+ul.cbp_tmtimeline{          /*Vertical Line*/
+  border-left: 5px solid #47a3da;
+  margin-left: 30px;
+  display: inline-block;
+
 }
 
-h2 {
+div.cbp_tmicon {        /*circles*/
+  height: 20px;
+  width: 20px;
+  border: 3px solid #47a3da;
+  border-radius: 20px;
+  display: inline-block;
+
+}
+
+
+.cbp_tmlabel {                     /*blue boxes*/  /*yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/*/
+  background-color:  #47a3da;
+  border-radius: 5px;
+  margin: 50px;
+/*  float: right;
+  display: inline;
+  clear: left; */
+  box-sizing: content-box;
+  position: relative;
+}
+
+li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+  background-color: #247cb1;
+}
+
+.cbp_tmlabel:after, .cmp_tmlabel:before {       /*caret*/
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cbp_tmlabel:after {                      /*caret*/
+  border-color: rgba(71, 163, 218, 0);
+	border-bottom-color: #47a3da;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.cbp_tmlabel:before {                         /*caret*/
+  border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}
+
+span {                    /*time and date*/
+  display: block;
+
+}
+
+h2 {                          /*Headings in boxes*/
   font-family: sans-serif;
   color: white;
   font-size: 30px;
   display: inline-block;
-  margin: 10px
+  margin: 10px;
+
 
 }
 
-p {
+p {                           /*paragraphs*/
   font-family: sans-serif;
   color: white;
   display: inline-block;
   margin: 10px;
+  border-top: 2px solid white; /*line divider*/
+  padding-top: 15px;
 }
 
-time {
+time {                          /*time font styles*/
   font-family: sans-serif;
   color:  #47a3da;
-  display: block;
   float: left;
   clear: right;
   margin: 20px;
 }
 
-div .cbp_tmicon .cbp_tmicon-phone {
+/*div .cbp_tmicon .cbp_tmicon-phone {
   display: block;
   margin: 10px;
   padding: 5px;
-}
+}*/
