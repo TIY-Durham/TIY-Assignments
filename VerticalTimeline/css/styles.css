@@ -37,7 +37,7 @@ div.cbp_tmicon {        /*circles*/
 /*  float: right;
   display: inline;
   clear: left; */
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: relative;
 }
 
@@ -75,12 +75,13 @@ span {                    /*time and date*/
 
 }
 
-h2 {                          /*Headings*/
+h2 {                          /*Headings in boxes*/
   font-family: sans-serif;
   color: white;
   font-size: 30px;
   display: inline-block;
-  margin: 10px
+  margin: 10px;
+
 
 }
 
@@ -89,6 +90,8 @@ p {                           /*paragraphs*/
   color: white;
   display: inline-block;
   margin: 10px;
+  border-top: 2px solid white; /*line divider*/
+  padding-top: 15px;
 }
 
 time {                          /*time font styles*/
