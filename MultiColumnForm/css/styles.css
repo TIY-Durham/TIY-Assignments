@@ -8,8 +8,10 @@ body {                              /*background*/
 
 span {                             /*Blueprints*/
   display: block;
+  margin-left: 30px;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: white;
+
 }
 
 nav {                             /*Nav buttons positioning*/
@@ -20,40 +22,9 @@ nav {                             /*Nav buttons positioning*/
 
 a {                               /*Nav buttons styling*/
   text-decoration: none;
-  color: white ;
+  color: white;
 }
 
-
-/*.bp-icon-next:after {
-    content: "\e000";
-}
-.bp-icon:after {
-    font-family: 'bpicons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-align: center;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-}
-
-.bp-icon:after {
-    font-family: 'bpicons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-align: center;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-}
-
-.bp-icon-prev::after {
-  content: "\e004";
-}*/
 
 h1 {                              /*Responsive Multi-Column Form*/
   text-align: center;
@@ -62,11 +33,12 @@ h1 {                              /*Responsive Multi-Column Form*/
   float: left;
   display:inline-block;
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 form {                          /*Form positioning Global*/
   text-align: center;
-  margin: 20px;
+  margin-bottom: 20px;
   display: block;
   clear: both;
 
@@ -82,10 +54,6 @@ form {                          /*Form positioning Global*/
 div.cbp-mc-column  {            /*column positioning*/
   width: 33%;
   float: left;
-
-
-
-
 
 }
 
@@ -131,15 +99,18 @@ textarea {                      /*Multi-line input boxes*/
   border: 2px solid white;
 }
 
+.cbp-mc-submit-wrap {
+  clear: both;
+}
+
 input.cbp-mc-submit {           /*Submit button*/
   color: white;
   text-align: center;
   background: #247cb1;
   border: none;
   border-radius: 3px;
-  margin-top: 50px;
   display: block;
-  clear: both;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
