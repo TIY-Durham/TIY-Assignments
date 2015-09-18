@@ -1,1 +1,6 @@
-
+@media (min-width: 1224px) {
+  div.cbp-mc-column {
+    width: 33%;
+    float: left;
+  }
+}
