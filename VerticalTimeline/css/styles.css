@@ -13,7 +13,8 @@ a {                         /*nav links*/
   color:  #47a3da
 }
 
-ul.cbp_tmtimeline{          /*Vertical Line*/
+ul.cbp_tmtimeline {    /*Vertical Line*/
+
   border-left: 5px solid #47a3da;
   margin-left: 30px;
   display: inline-block;
@@ -45,10 +46,11 @@ li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-trick
   background-color: #247cb1;
 }
 
-.cbp_tmlabel:after, .cmp_tmlabel:before {       /*caret*/
-  right: 100%;
-  top: 50%;
-  border: solid transparent;
+
+.cbp_tmlabel::after, .cbp_tmlabel::before {     /*caret*/
+	right: 100%;
+	top: 9%;
+	border: solid transparent;
 	content: " ";
 	height: 0;
 	width: 0;
@@ -56,19 +58,27 @@ li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-trick
 	pointer-events: none;
 }
 
-.cbp_tmlabel:after {                      /*caret*/
-  border-color: rgba(71, 163, 218, 0);
-	border-bottom-color: #47a3da;
-	border-width: 30px;
-	margin-left: -30px;
+.cbp_tmlabel::after {                         /*caret*/
+	border-color: rgba(71, 163, 218, 0);
+	border-right-color: #47a3da;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.cbp_tmlabel::before {                      /*caret*/
+	border-color: rgba(71, 163, 218, 0);
+	border-right-color: #47a3da;
+	border-width: 10px;
+	margin-top: -10px;
 }
 
-.cbp_tmlabel:before {                         /*caret*/
-  border-color: rgba(194, 225, 245, 0);
-	border-bottom-color: #c2e1f5;
-	border-width: 36px;
-	margin-left: -36px;
+li:nth-child(odd) .cbp_tmlabel::after {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+  border-right-color: #247cb1;
 }
+
+li:nth-child(odd) .cbp_tmlabel::before {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
+  border-right-color: #247cb1;
+}
+
 
 span {                    /*time and date*/
   display: block;
