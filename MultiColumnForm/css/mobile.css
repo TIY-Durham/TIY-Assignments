@@ -5,9 +5,9 @@ which-are-the-most-important-media-queries-to-use-
 in-creating-mobile-responsive*/
 
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   div.cbp-mc-column {
     width: 100%;
     float: left;
   }
-}  
+}
