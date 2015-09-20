@@ -1,7 +1,7 @@
-(function (window) { //this function takes window object which represents a window containing the DOM document.
-		     //I believe the function(window) is saying that in this function the code will be part of the DOM document
-				//  and be displayed in the browser as part of the page.
-	'use strict';
+// (function (window) { //this function takes window object which represents a window containing the DOM document.
+// 		     //I believe the function(window) is saying that in this function the code will be part of the DOM document
+// 				//  and be displayed in the browser as part of the page.
+// 	'use strict';
 
 	// Your starting point. Enjoy the ride!
 	/*       PSEUDOCODE!!!!
@@ -26,12 +26,19 @@
 	and the view is changed to show only <label> elements who's corresponding
 	<li> does NOT have the class "completed"
 */
-})(window);
-1 I can add a task to my todo list so that I can remember to do it later.
-1.) Add eventListener "input" to HTML element <input class="new-todo">
-so that user can input a new task.
+// })(window);
+// 1 I can add a task to my todo list so that I can remember to do it later.
+// 1.) Add eventListener "input" to HTML element <input class="new-todo">
+// so that user can input a new task.
 
+var task = document.querySelector("new-todo");
 
+function logTask () {
+	// var collectedTask = [task.value];
+	console.log (collectedTask);
+};
+
+task.addEventListener('input', logTask);
 
 
 
