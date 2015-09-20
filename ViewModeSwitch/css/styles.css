@@ -114,7 +114,8 @@ ul {                                      /*HORIZONTAL LINE*/
 }
 
 .cbp-vm-view-grid h3 {                    /*PRODUCT NAME*/
-
+  font-size: 25pt;
+  font-weight: bolder;
   padding: 2px;
   margin: 2px;
 }
@@ -161,14 +162,28 @@ ul {                                      /*HORIZONTAL LINE*/
 }
 
 .cbp-vm-view-list li {
-  float:left;
+  padding: 20px;
+}
+
+.cbp-vm-view-list .cbp-vm-image {
+  width: 10%;
 }
 
 .cbp-vm-view-list h3 {
+  font-size: 25pt;
+  font-weight: bolder;
+  display: block;
+  width: 23%;
 
 }
 
 .cbp-vm-view-list .cbp-vm-price {
   color: #c0c0c0;
   font-size: 20pt;
+  width: 10%;
+
+}
+
+.cbp-vm-view-list .cbp-vm-details {
+  width: 40%;
 }
