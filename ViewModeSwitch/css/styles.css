@@ -95,6 +95,11 @@ ul {                                      /*HORIZONTAL LINE*/
     -webkit-font-smoothing: antialiased;
 }
 
+.cbp-vm-price {
+  color: #c0c0c0;
+  font-size: 20pt;
+}
+
 /*********************************************/
 /*Code that applies to GRID*/
 
@@ -109,8 +114,7 @@ ul {                                      /*HORIZONTAL LINE*/
 }
 
 .cbp-vm-view-grid h3 {                    /*PRODUCT NAME*/
-  font-size: 25pt;
-  font-weight: bolder;
+
   padding: 2px;
   margin: 2px;
 }
@@ -149,9 +153,22 @@ ul {                                      /*HORIZONTAL LINE*/
 
 
 
-
+/*******************************************/
 /*Code that applies to LIST*/
 
 .cbp-vm-view-list ul {
 
+}
+
+.cbp-vm-view-list li {
+  float:left;
+}
+
+.cbp-vm-view-list h3 {
+
+}
+
+.cbp-vm-view-list .cbp-vm-price {
+  color: #c0c0c0;
+  font-size: 20pt;
 }
