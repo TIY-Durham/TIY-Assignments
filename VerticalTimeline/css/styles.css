@@ -1,5 +1,6 @@
 * {
   font-family: "Lato", sans-serif;
+  color: #47a3da;
 }
 
 h1 {                      /*Vertical Timeline Heading*/
@@ -16,18 +17,17 @@ a {                         /*nav links*/
   color:  #47a3da
 }
 
-ul.cbp_tmtimeline {    /*Vertical Line*/
-
-  border-left: 5px solid #47a3da;
-  margin-left: 30px;
-  display: inline-block;
-
+ul {
+  margin-top: 30px;
 }
+
+
+
 
 div.cbp_tmicon {        /*circles*/
   height: 20px;
   width: 20px;
-  border: 3px solid #afdcf8;
+  border: 10px solid #afdcf8;
   border-radius: 20px;
   display: inline-block;
 
@@ -37,20 +37,29 @@ li .cbp_tmlabel {        /*time and date positioning*/
   width: 45%;
   float: right;
   margin-right: 80px;
-  /*clear: left;*/
   display: block;
 }
 
-li .cbp_tmicon {          /*circles and line positioning*/
-  margin-left: 200px;
-  margin-right: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: block;
+li .cbp_tmicon {          /*circles positioning*/
+  margin-left: 76px;
+  left: 20%;
+  display: inline;
   float: left;
-
-
 }
+
+/*ul.cbp_tmtimeline::before {    /*Vertical Line DESKTOP ONLY*/
+/*  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height:2096px;
+  background: #afdcf8;
+  left: 20%;
+  margin-top: 138px;
+  margin-left: -10px;
+
+}*/
 
 li .cbm_tmtime {            /*boxes positioning*/
   width: 25%;
@@ -73,8 +82,8 @@ li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-trick
 }
 
 
-.cbp_tmlabel::after, .cbp_tmlabel::before {     /*caret*/
-	right: 100%;
+/*.cbp_tmlabel::after, .cbp_tmlabel::before {     /*caret*/
+/*	right: 100%;
 	top: 9%;
 	border: solid transparent;
 	content: " ";
@@ -85,25 +94,25 @@ li:nth-child(odd) .cbp_tmlabel {     /*every other blue*/    /*https://css-trick
 }
 
 .cbp_tmlabel::after {                         /*caret*/
-	border-color: rgba(71, 163, 218, 0);
+	/*border-color: rgba(71, 163, 218, 0);
 	border-right-color: #47a3da;
 	border-width: 10px;
 	margin-top: -10px;
 }
 .cbp_tmlabel::before {                      /*caret*/
-	border-color: rgba(71, 163, 218, 0);
+/*	border-color: rgba(71, 163, 218, 0);
 	border-right-color: #47a3da;
 	border-width: 10px;
 	margin-top: -10px;
 }
 
-li:nth-child(odd) .cbp_tmlabel::after {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
-  border-right-color: #247cb1;
+li:nth-child(odd) .cbp_tmlabel::after {     /*every other blue caret*/    /*https://css-tricks.com/how-nth-child-works/*/
+/*  border-right-color: #247cb1;
 }
 
-li:nth-child(odd) .cbp_tmlabel::before {     /*every other blue*/    /*https://css-tricks.com/how-nth-child-works/*/
-  border-right-color: #247cb1;
-}
+li:nth-child(odd) .cbp_tmlabel::before {     /*every other blue caret*/    /*https://css-tricks.com/how-nth-child-works/*/
+/*  border-right-color: #247cb1;
+}*/
 
 
 span {                    /*time and date*/
@@ -111,7 +120,7 @@ span {                    /*time and date*/
 }
 
 h2 {                          /*Headings in boxes*/
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   font-size: 30px;
   display: inline-block;
@@ -121,7 +130,9 @@ h2 {                          /*Headings in boxes*/
 }
 
 p {                           /*paragraphs*/
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
   color: white;
   display: inline-block;
   margin: 10px;
