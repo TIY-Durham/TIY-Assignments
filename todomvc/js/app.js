@@ -27,6 +27,14 @@
 	<li> does NOT have the class "completed"
 */
 })(window);
+1 I can add a task to my todo list so that I can remember to do it later.
+1.) Add eventListener "input" to HTML element <input class="new-todo">
+so that user can input a new task.
+
+
+
+
+
 
 
 // User Stories
