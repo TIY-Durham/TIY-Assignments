@@ -31,14 +31,14 @@
 // 1.) Add eventListener "input" to HTML element <input class="new-todo">
 // so that user can input a new task.
 
-var task = document.querySelector("new-todo");
+var task = document.querySelector(".new-todo");
 
 function logTask () {
-	// var collectedTask = [task.value];
+	var collectedTask = [task.value];
 	console.log (collectedTask);
 };
 
-task.addEventListener('input', logTask);
+task.addEventListener('keypress', logTask);
 
 
 
