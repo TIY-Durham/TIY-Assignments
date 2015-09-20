@@ -6,20 +6,79 @@
 }
 */
 /*code that applies to both:*/
+* {                                         /*GENERAL PAGE STYLING*/
+  font-family: "Lato" sans-serif;
+  color: #47a3da;
+  list-style: none;
+}
 
+div #cbp-vm {                             /*BORDER*/
+  border: 3px solid #47a3da;
+  padding: 20px;
+  height: 1300px;
+}
 
+ul {                                      /*HORIZONTAL LINE*/
+  border-top: 3px solid #47a3da;
+  height: 0px;
 
-
+}
 
 
 
 
 /*Code that applies to GRID*/
 
-.cbp-vm-view-grid ul {
-
+.cbp-vm-view-grid ul {                  /*BASIC STYLING*/
+  text-align: center;
 
 }
+
+.cbp-vm-view-grid li {                  /*BASIC GRID*/
+  float:left;
+  width: 33%;
+}
+
+.cbp-vm-view-grid h3 {                    /*PRODUCT NAME*/
+  font-size: 25pt;
+  font-weight: bolder;
+  padding: 2px;
+  margin: 2px;
+}
+
+.cbp-vm-view-grid  .cbp-vm-price {          /*PRICE*/
+  color: #c0c0c0;
+  font-size: 20pt;
+  padding: 5px;
+  margin-bottom: 4px;
+}
+
+.cbp-vm-view-grid .cbp-vm-details {        /*DESCRIPTION*/
+
+  max-width: 300px;
+  min-height: 70px;
+  margin: 0;
+}
+
+.cbp-vm-view-grid .cbp-vm-add {
+  background-color: #47a3da;
+  color: white;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  margin: 10px;
+
+}
+
+.cbp-vm-view-grid .cbp-vm-image {
+  display: block;
+  margin-top: 80px;
+}
+
+
+
 
 
 /*Code that applies to LIST*/
