@@ -5,7 +5,32 @@
   box-sizing: border-box;
 }
 */
+/*
+.cbp-vm-options a:before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.cbp-vm-grid:before {
+    content: "\f00a";
+}
+.cbp-vm-icon:before {
+    font-family: 'fontawesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}*/
+
+/********************************************************/
 /*code that applies to both:*/
+
 * {                                         /*GENERAL PAGE STYLING*/
   font-family: "Lato" sans-serif;
   color: #47a3da;
@@ -15,18 +40,62 @@
 div #cbp-vm {                             /*BORDER*/
   border: 3px solid #47a3da;
   padding: 20px;
-  height: 1300px;
+  height: 2000px;
+  margin: 130px;
 }
 
 ul {                                      /*HORIZONTAL LINE*/
   border-top: 3px solid #47a3da;
   height: 0px;
-
+  margin-bottom: 50px;
 }
 
+.cbp-vm-options a:before {            /*GRID ICON POSITIONING*/
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    display: inline-block;
+    float: right;
+}
 
+.cbp-vm-grid::before {                /*GRID ICON*/
+  content: "\f00a";
+}
 
+.cbp-vm-icon::before {               /*GRID ICON STYLING*/
+    font-family: 'fontawesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
 
+.cbp-vm-options a:before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    display: inline-block;
+}
+.cbp-vm-list:before {
+    content: "\f00b";
+}
+.cbp-vm-icon:before {
+    font-family: 'fontawesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*********************************************/
 /*Code that applies to GRID*/
 
 .cbp-vm-view-grid ul {                  /*BASIC STYLING*/
@@ -57,7 +126,7 @@ ul {                                      /*HORIZONTAL LINE*/
 
   max-width: 300px;
   min-height: 70px;
-  margin: 0;
+  margin: 32px;
 }
 
 .cbp-vm-view-grid .cbp-vm-add {
