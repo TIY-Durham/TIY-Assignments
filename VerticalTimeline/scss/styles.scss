@@ -147,18 +147,28 @@ time {                          /*time font styles*/
   float: left;
   clear: right;
   margin: 20px;
+
+  > span:first-child {      /*date specific styling*/
+    color: grey;
+  }
+
+  > span:nth-child(2) {        /*time specific styling*/
+    font-weight: bold;
+    font-size: 28pt;
+
+  }
 }
 
-time > span:first-child {      /*date specific styling*/
-  color: grey;
-
-}
-
-time > span:nth-child(2) {        /*time specific styling*/
-  font-weight: bold;
-  font-size: 28pt;
-
-}
+// time > span:first-child {      /*date specific styling*/
+//   color: grey;
+//
+// }
+//
+// time > span:nth-child(2) {        /*time specific styling*/
+//   font-weight: bold;
+//   font-size: 28pt;
+//
+// }
 
 /*div .cbp_tmicon .cbp_tmicon-phone {
   display: block;
