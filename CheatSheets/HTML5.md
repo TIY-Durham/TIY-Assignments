@@ -1,3 +1,16 @@
+HTML tags consist of:
+* An opening tag:
+ - left angle bracket `<` a character (indicates the purpose of a tag) `p` and a right angle bracket `>`.
+* Optional content
+* A closing tag:
+- `<` forward slash `/` character `p` `>`
+
+Ex: `<p>Optional content</p>`
+
+Unless an element is an "empty element" like an `<img>` then it must contain both an opening and closing tag.
+Empty elements are self closing. Ex: `<img src="url" title />` 
+
+
 ## `<html>`
 
 the main enchilada, the whole `document`, that which wraps all the others...
