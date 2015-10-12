@@ -39,6 +39,12 @@
 
   &.active {
     display: inherit;
+
+    &::after {
+      display: table;
+      content: ' ';
+      clear: both;
+    }
   }
 }
 
